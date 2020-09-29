@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>figure</title>
+</head>
+<h1 style="color:green;">
+    <center>Теги &#60;figure&#62; и &#60;figcaption&#62;.</center>
+</h1>
+<h2>Элемент &#60;figure&#62;</h2>
+<p>Элемент &#60;figure&#62; используется в сочетании с &#60;figcaption&#62; и предназначен для
+    разметки диаграмм, иллюстраций, фотографий, примеров кода и других вещей.
+</p>
+<p>Элемент <b>figure</b> представляет собой самодостаточный блок контента с возможным заголовком,
+    на который, как правило, ссылаются из основного потока документа. Этот блок может быть
+    перемещён из основного потока документа без потери общего смысла документа.
+</p>
+<h2>Элемент &#60;figcaption&#62;</h2>
+<p>Элемент <b>figcaption</b> представляет собой заголовок или легенду для figure.</p>
+<p>Элемент &#60;figcaption&#62; не обязателен и добавляется до или после содержимого внутри &#60;figure&#62;.
+    Только один &#60;figcaption&#62; может находиться внутри &#60;figure&#62;, при этом допустимо добавлять
+    множество других дочерних элементов (например, &#60;img&#62; или &#60;code&#62;).</p>
+<h2 style="color:green;">
+    <center>Примеры использования.</center>
+</h2>
+<h3>Элемент <b>figure</b> обычно используется для изображений.</h3>
+<p>
+<pre>
+    &#60;figure&#62;<br>
+        &#60;img src="dog.jpg" alt="Maltese Terrier"&#62;<br>
+    &#60;/figure&#62;<br>
+</pre>
+</p>
+<h3>Несколько изображений внутри figure.</h3>
+<p>
+<pre>
+    &#60;figure&#62;
+        &#60;img src="dog1.jpg" alt="Maltese Terrier"&#62;
+        &#60;img src="dog2.jpg" alt="Black Labrador"&#62;
+        &#60;img src="dog3.jpg" alt="Golden Retriever"&#62;
+    &#60;/figure&#62;
+    </pre>
+</p>
+<h3>Пример использования figure для блока с кодом:</h3>
+<pre>
+&#60;figure&#62;
+    &#60;pre&#62;
+        &#60;code&#62;
+      p {
+          color: #333;
+          font-family: Helvetica, sans-serif;
+          font-size: 1rem;
+      }
+    &#60;/code&#62;
+  &#60;/pre&#62;
+&#60;/figure&#62;
+</pre>
+<h4>Выглядеть будет следующим образом:</h4>
+<figure>
+  <pre>
+    <code>
+      p {
+          color: #333;
+          font-family: Helvetica, sans-serif;
+          font-size: 1rem;
+      }
+    </code>
+  </pre>
+</figure>
+<h3>Возможно вложение figure в другой тег figure.</h3>
+<pre>
+&#60;figure role="group"&#62;
+    &#60;figure&#62;Dog breeds &#60;/figure&#62;
+    &#60;figure&#62;
+        &#60;img src="dog1.jpg" alt="Maltese Terrier"&#62;
+        &#60;figcaption&#62;Adorable Maltese Terrier&#60;/figcaption&#62;
+    &#60;/figure&#62;
+    &#60;/figure&#62;
+        &#60;img src="dog2.jpg" alt="Black Labrador"&#62;
+        &#60;figcaption&#62;Cute black labrador&#60;/figcaption&#62;
+    &#60;/figure&#62;
+&#60;/figure&#62;
+    </pre>
+<h3>Пример использования figcaption.</h3>
+<p> При использовании figcaption, идеально если он идет первым или
+    последним тегом внутри блока figure.</p>
+<pre>
+    &#60;figure&#62;
+        &#60;figcaption&#62;Three different breeds of dog.&#60;/figcaption&#62;
+        &#60;img src="dog1.jpg" alt="Maltese Terrier"&#62;
+        &#60;img src="dog2.jpg" alt="Black Labrador"&#62;
+        &#60;img src="dog3.jpg" alt="Golden Retriever"&#62;
+    &#60;/figure&#62;
+</pre>
+<p>Или</p>
+<pre>
+    &#60;figure&#62;
+        &#60;img src="dog1.jpg" alt="Maltese Terrier"&#62;
+        &#60;img src="dog2.jpg" alt="Black Labrador"&#62;
+        &#60;img src="dog3.jpg" alt="Golden Retriever"&#62;
+        &#60;figcaption&#62;Three different breeds of dog.&#60;/figcaption&#62;
+    &#60;figure&#62;
+</pre>
+<h3>Можно использовать потоковые элементы в figcaption.</h3>
+<pre>
+    &#60;figure&#62;
+        &#60;img src="dogs.jpg" alt="Group photo of dogs">
+        &#60;figcaption&#62;
+            &#60;h2>Puppy School&#60;/h2&#62;
+            &#60;p>Championship Class of 2016&#60;/p&#62;
+        &#60;/figcaption&#62;
+    &#60;figure&#62;
+</pre>
+<h2 style="color:green;">
+    <center>Минусы и плюсы использования данных тегов в сравнении с
+        обычной вставкой изображений.
+    </center>
+</h2>
+
+<h3>Плюсы</h3>
+<ol>
+    <li>&#60;figure&#62; может быть удалён из документа без ущерба его смыслу</li>
+    <li>элемент &#60;figure&#62; может содержать несколько дочерних элементов (например, &#60;img&#62; или &#60;code&#62;)</li>
+    <li>только один элемент &#60;figcaption&#62; может быть помещен в &#60;figure&#62;</li>
+    <li>возможно размещение нескольких изображений в &#60;figure&#62;, что добавляет удобства</li>
+</ol>
+<h3>Минусы</h3>
+<ol>
+    <li>если положение содержимого в тексте тесно связано с предыдущим и последующим содержимым, следует использовать
+        более подходящие элементы — например, &#60;div&#62;, старый добрый &#60;img&#62;, &#60;blockquote&#62;
+    </li>
+    <li> использование элемента &#60;figure&#62;> не всегда целесообразно (например, графический баннер не стоит
+        размечать в &#60;figure&#62;, используйте для этого просто &#60;img&#62;)
+    </li>
+</ol>
+</body>
+</html>
