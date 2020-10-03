@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <style>
+        body {
+            background-color: #445566;
+        }
+
+        .calendar {
+            display: flex;
+            justify-content: center;
+            margin: 3%;
+        }
+
+        table {
+            border: 1px solid rgb(213, 213, 213);
+            border-collapse: collapse;
+        }
+
+        caption {
+            border: 1px solid rgb(213, 213, 213);
+            background-color: #ee3333;
+            color: rgb(255, 255, 255);
+        }
+
+        td {
+            width: 38px;
+            height: 38px;
+        }
+
+        td, tr {
+            text-align: center;
+            border: 1px solid rgb(213, 213, 213);
+        }
+
+        .holiday {
+            color: rgb(255, 255, 255);
+            background-color: #ee3333;
+        }
+
+        .last_or_next_months {
+            color: rgb(134, 135, 134);
+            background-color: #ffffff;
+        }
+
+        .weekday {
+            color: rgb(76, 78, 75);
+            background-color: #eeeeee;
+        }
+
+        .weekend {
+            color: rgb(255, 255, 255);
+            background-color: #787878;
+        }
+    </style>
+</head>
+<body>
+<div class="calendar">
+    <table>
+        <caption><h1>Май</h1></caption>
+        <tr>
+            <td class="last_or_next_months">30</td>
+            <td class="weekday">1</td>
+            <td class="weekday">2</td>
+            <td class="weekday">3</td>
+            <td class="weekday">4</td>
+            <td class="weekend">5</td>
+            <td class="weekend">6</td>
+        </tr>
+        <tr>
+            <td class="weekday">7</td>
+            <td class="weekday">8</td>
+            <td class="holiday">9</td>
+            <td class="weekday">10</td>
+            <td class="weekday">11</td>
+            <td class="weekend">12</td>
+            <td class="weekend">13</td>
+        </tr>
+        <tr>
+            <td class="weekday">14</td>
+            <td class="weekday">15</td>
+            <td class="weekday">16</td>
+            <td class="weekday">17</td>
+            <td class="weekday">18</td>
+            <td class="weekend">19</td>
+            <td class="weekend">20</td>
+        </tr>
+        <tr>
+            <td class="weekday">21</td>
+            <td class="weekday">22</td>
+            <td class="weekday">23</td>
+            <td class="weekday">24</td>
+            <td class="weekday">25</td>
+            <td class="weekend">26</td>
+            <td class="weekend">27</td>
+        </tr>
+        <tr>
+            <td class="weekday">28</td>
+            <td class="weekday">29</td>
+            <td class="weekday">30</td>
+            <td class="weekday">31</td>
+            <td class="last_or_next_months">1</td>
+            <td class="last_or_next_months">2</td>
+            <td class="last_or_next_months">3</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
