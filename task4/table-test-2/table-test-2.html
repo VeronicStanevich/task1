@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table-test-2</title>
+    <style>
+        .table-first {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid blue;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+            border-right: none;
+        }
+
+        .with-border {
+            border: 2px solid blue;
+        }
+
+        .main-row {
+            color: #ffffff;
+            border: 2px solid blue;
+            background-color: #888888;
+        }
+
+        .left-position {
+            text-align: left;
+        }
+
+        .right-position {
+            text-align: right;
+        }
+
+        .first-color-table {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+        }
+
+        .first-color-table__square_red {
+            background-color: rgb(251, 0, 6);
+        }
+
+        .first-color-table__square_white, .second-color-table__white {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .first-color-table__square_green {
+            background-color: rgb(114, 255, 9);
+        }
+
+        .second-color-table {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+            width: 1020px;
+            height: 300px;
+
+        }
+
+        .second-color-table__pink {
+            background-color: rgb(251, 0, 129);
+        }
+
+        .second-color-table__violet {
+            background-color: rgb(231, 102, 234);
+        }
+
+        .second-color-table__pink2 {
+            background-color: rgb(252, 76, 166);
+        }
+
+        .second-color-table__pink-center {
+            background-color: rgb(252, 165, 180);
+        }
+
+        .second-color-table__green1 {
+            background-color: rgb(31, 124, 26);
+        }
+
+        .second-color-table__green2 {
+            background-color: rgb(51, 168, 94);
+        }
+
+        .second-color-table__green3 {
+            background-color: rgb(47, 199, 38);
+        }
+
+        .second-color-table__green4 {
+            background-color: rgb(34, 255, 8);
+        }
+
+        .third-color-table {
+            margin-top: 20px;
+            width: 300px;
+            height: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            border-collapse: collapse;
+        }
+
+        .third-color-table__black {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .third-color-table__green1 {
+            background-color: rgb(15, 112, 1);
+        }
+
+        .third-color-table__green2 {
+            background-color: rgb(39, 123, 69);
+        }
+
+        .third-color-table__green3 {
+            background-color: rgb(51, 168, 94);
+        }
+
+        .third-color-table__green4 {
+            background-color: rgb(47, 199, 38);
+        }
+
+        .third-color-table__brown1 {
+            background-color: rgb(119, 52, 16);
+        }
+
+        .third-color-table__brown2 {
+            background-color: rgb(169, 116, 13);
+        }
+    </style>
+</head>
+<body>
+<h1>Пример сложной таблицы</h1>
+<table class="table-first">
+    <tr class="main-row">
+        <td>Название1</td>
+        <td>Название2</td>
+        <td>Ещё название</td>
+        <td>Куча элементов</td>
+        <td>Список1</td>
+        <td>Список2</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border" rowspan="11">JPMC</td>
+        <td class="with-border" rowspan="5">CST</td>
+        <td class="with-border left-position" rowspan="3">CT</td>
+        <td class="with-border left-position">ADS</td>
+        <td class="with-border">1</td>
+        <td class="with-border">10</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border left-position">BTO</td>
+        <td class="with-border">2</td>
+        <td class="with-border">15</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border left-position">CSI</td>
+        <td class="with-border">3</td>
+        <td class="with-border">16</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border" rowspan="2">VCT</td>
+        <td class="with-border left-position">ADS</td>
+        <td class="with-border">4</td>
+        <td class="with-border">10</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border left-position">BTO</td>
+        <td class="with-border">5</td>
+        <td class="with-border">15</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border right-position" colspan="3">Sub Total</td>
+        <td class="with-border">6</td>
+        <td class="with-border">15</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border" rowspan="4">CST</td>
+        <td class="with-border left-position" rowspan="3">CT</td>
+        <td class="with-border left-position">ADS</td>
+        <td class="with-border">7</td>
+        <td class="with-border">10</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border left-position">BTO</td>
+        <td class="with-border">8</td>
+        <td class="with-border">15</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border left-position">CSI</td>
+        <td class="with-border">9</td>
+        <td class="with-border">16</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border">VCT</td>
+        <td class="with-border left-position">ADS</td>
+        <td class="with-border">10</td>
+        <td class="with-border">10</td>
+    </tr>
+    <tr class="with-border">
+        <td class="with-border right-position" colspan="3">Sub Total</td>
+        <td class="with-border">11</td>
+        <td class="with-border">15</td>
+    </tr>
+</table>
+<table class="first-color-table">
+    <tr>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_green"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+    </tr>
+    <tr>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_green"></td>
+        <td class="first-color-table__square_red"></td>
+        <td class="first-color-table__square_white"></td>
+        <td class="first-color-table__square_red"></td>
+    </tr>
+</table>
+<table class="second-color-table">
+    <tr>
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="7"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="7"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="3"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__white" colspan="2"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="5"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="5"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__white" colspan="1"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green3">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="1"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__pink-center"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green3">
+        <td class="second-color-table__green4">
+        <td class="second-color-table__green3">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__pink-center"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__white" colspan="1"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green3">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink2"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="1"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__white" colspan="2"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="5"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__green2">
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="5"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__violet"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="second-color-table__white" colspan="3"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="7"></td>
+        <td class="second-color-table__green1">
+        <td class="second-color-table__white" colspan="7"></td>
+        <td class="second-color-table__pink"></td>
+        <td class="second-color-table__white" colspan="3"></td>
+    </tr>
+</table>
+<table class="third-color-table">
+    <tr>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__green1"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__black"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="4"></td>
+        <td class="third-color-table__green2" colspan="3"></td>
+        <td class="third-color-table__black" colspan="4"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="3"></td>
+        <td class="third-color-table__green3" colspan="5"></td>
+        <td class="third-color-table__black" colspan="3"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="2"></td>
+        <td class="third-color-table__green4" colspan="7"></td>
+        <td class="third-color-table__black" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="4"></td>
+        <td class="third-color-table__green1" colspan="3"></td>
+        <td class="third-color-table__black" colspan="4"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="3"></td>
+        <td class="third-color-table__green2" colspan="5"></td>
+        <td class="third-color-table__black" colspan="3"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="2"></td>
+        <td class="third-color-table__green3" colspan="7"></td>
+        <td class="third-color-table__black" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__green4" colspan="9"></td>
+        <td class="third-color-table__black"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="3"></td>
+        <td class="third-color-table__green1" colspan="5"></td>
+        <td class="third-color-table__black" colspan="3"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" colspan="2"></td>
+        <td class="third-color-table__green2" colspan="7"></td>
+        <td class="third-color-table__black" colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black"></td>
+        <td class="third-color-table__green3" colspan="9"></td>
+        <td class="third-color-table__black"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__green4" colspan="11"></td>
+    </tr>
+    <tr>
+        <td class="third-color-table__black" rowspan="5" colspan="4"></td>
+        <td class="third-color-table__brown1" rowspan="5"></td>
+        <td class="third-color-table__brown2" rowspan="5"></td>
+        <td class="third-color-table__brown1" rowspan="5"></td>
+        <td class="third-color-table__black" rowspan="5" colspan="4"></td>
+    </tr>
+</table>
+</body>
+</html>
