@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chess</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .table_chess {
+            margin-right: auto;
+            margin-left: auto;
+            background-color: white;
+            border-collapse: collapse;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .square {
+            width: 48px;
+            height: 48px;
+        }
+
+        .square_black {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .table_chess__col {
+            padding: 5px;
+        }
+
+        .table_chess__row1 {
+            border-bottom: 1px solid black;
+        }
+
+        .table_chess__col1 {
+            border-right: 1px solid black;
+        }
+
+        .table_chess__last-col {
+            border-left: 1px solid black;
+        }
+
+        .table_chess__last-row {
+            border-top: 1px solid black;
+        }
+
+        .pawn-black {
+            background-image: url("chess.png");
+            background-position: 100% 0;
+        }
+
+        .pawn-white {
+            background-image: url("chess.png");
+            background-position: 100% 100%;
+        }
+
+        .castle-black {
+            background-image: url("chess.png");
+            background-position: 40% 0;
+        }
+
+        .knight-black {
+            background-image: url("chess.png");
+            background-position: 80% 0;
+        }
+
+        .bishop-black {
+            background-image: url("chess.png");
+            background-position: 60% -2%;
+        }
+
+        .queen-black {
+            background-image: url("chess.png");
+            background-position: 20% 0;
+        }
+
+        .king-black {
+            background-image: url("chess.png");
+            background-position: 0 0;
+        }
+
+        .castle-white {
+            background-image: url("chess.png");
+            background-position: 40.5% 100%;
+        }
+
+        .knight-white {
+            background-image: url("chess.png");
+            background-position: 80% 100%;
+        }
+
+        .bishop-white {
+            background-image: url("chess.png");
+            background-position: 60% 100%;
+        }
+
+        .queen-white {
+            background-image: url("chess.png");
+            background-position: 20% 100%;
+        }
+
+        .king-white {
+            background-image: url("chess.png");
+            background-position: 0 100%;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title">Шахматы</h1>
+<table class="table_chess">
+    <tr>
+        <td class="table_chess__col"></td>
+        <td class="table_chess__col table_chess__row1">a</td>
+        <td class="table_chess__col table_chess__row1">b</td>
+        <td class="table_chess__col table_chess__row1">c</td>
+        <td class="table_chess__col table_chess__row1">d</td>
+        <td class="table_chess__col table_chess__row1">e</td>
+        <td class="table_chess__col table_chess__row1">f</td>
+        <td class="table_chess__col table_chess__row1">g</td>
+        <td class="table_chess__col table_chess__row1">h</td>
+        <td class="table_chess__col"></td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">8</td>
+        <td class="square castle-black"></td>
+        <td class="square square_black knight-black"></td>
+        <td class="square bishop-black"></td>
+        <td class="square square_black queen-black"></td>
+        <td class="square king-black"></td>
+        <td class="square square_black bishop-black"></td>
+        <td class="square knight-black"></td>
+        <td class="square square_black castle-black"></td>
+        <td class="table_chess__col table_chess__last-col">8</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">7</td>
+        <td class="square square_black pawn-black"></td>
+        <td class="square pawn-black"></td>
+        <td class="square square_black pawn-black"></td>
+        <td class="square pawn-black"></td>
+        <td class="square square_black pawn-black"></td>
+        <td class="square pawn-black"></td>
+        <td class="square square_black pawn-black"></td>
+        <td class="square pawn-black"></td>
+        <td class="table_chess__col table_chess__last-col">7</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">6</td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="table_chess__col table_chess__last-col">6</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">5</td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="table_chess__col table_chess__last-col">5</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">4</td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="table_chess__col table_chess__last-col">4</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">3</td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="square square_black"></td>
+        <td class="square"></td>
+        <td class="table_chess__col table_chess__last-col">3</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">2</td>
+        <td class="square pawn-white"></td>
+        <td class="square square_black pawn-white"></td>
+        <td class="square pawn-white"></td>
+        <td class="square square_black pawn-white"></td>
+        <td class="square pawn-white"></td>
+        <td class="square square_black pawn-white"></td>
+        <td class="square pawn-white"></td>
+        <td class="square square_black pawn-white"></td>
+        <td class="table_chess__col table_chess__last-col">2</td>
+    </tr>
+    <tr>
+        <td class="table_chess__col table_chess__col1">1</td>
+        <td class="square square_black castle-white"></td>
+        <td class="square knight-white"></td>
+        <td class="square square_black bishop-white"></td>
+        <td class="square queen-white"></td>
+        <td class="square square_black king-white"></td>
+        <td class="square bishop-white"></td>
+        <td class="square square_black knight-white"></td>
+        <td class="square castle-white"></td>
+        <td class="table_chess__col table_chess__last-col">1</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="table_chess__col table_chess__last-row">a</td>
+        <td class="table_chess__col table_chess__last-row">b</td>
+        <td class="table_chess__col table_chess__last-row">c</td>
+        <td class="table_chess__col table_chess__last-row">d</td>
+        <td class="table_chess__col table_chess__last-row">e</td>
+        <td class="table_chess__col table_chess__last-row">f</td>
+        <td class="table_chess__col table_chess__last-row">g</td>
+        <td class="table_chess__col table_chess__last-row">h</td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
