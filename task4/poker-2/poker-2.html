@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poker-2</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .main-block {
+            border-style: solid;
+            border-width: 70px;
+            background-color: white;
+            border-image: url("ramka.png") 97 round;
+        }
+
+        .main-block__text {
+            margin: 20px;
+        }
+
+        .combination-of-cards {
+            height: 190px;
+            border: 2px solid green;
+            padding: 20px;
+        }
+
+        .combination-of-cards__card {
+            display: inline-block;
+            height: 190px;
+            width: 140px;
+            background-image: url("cards2.png");
+            float: left;
+        }
+
+        .card_1 {
+            background-position: 0 92.3%;
+        }
+
+        .card_2 {
+            background-position: 33.4% 84.6%;
+        }
+
+        .card_3 {
+            background-position: 66.3% 76.9%;
+        }
+
+        .card_4 {
+            background-position: 99.7% 69.2%;
+        }
+
+        .card_5 {
+            background-position: 33.4% 61.5%;
+        }
+    </style>
+</head>
+<body>
+<div class="main-block">
+    <div class="main-block__text">
+        <h1>Покер</h1>
+        <p><b>По́кер</b> (англ. poker) — карточная игра, цель которой — выиграть ставки, собрав как можно более высокую
+            покерную комбинацию, используя 4 (старый классический вариант), или 5 карт, или вынудив всех соперников
+            прекратить участвовать в игре. Игра идёт с полностью или частично закрытыми картами. Конкретные
+            правила могут варьироваться в зависимости от разновидности покера. Обобщающими элементами всех
+            разновидностей покера являются комбинации и наличие торговли в процессе игры.</p>
+
+        <p>Ввиду того, что игрок не знает карты своих противников, покер является игрой с неполной информацией,
+            как и многие другие карточные игры, в отличие от, например, шахмат, в которых оба игрока видят
+            положение всех фигур на доске.</p>
+
+        <h2>Комбинация в покере — стрит</h2>
+        <div class="combination-of-cards">
+            <div class="combination-of-cards__card card_1"></div>
+            <div class="combination-of-cards__card card_2"></div>
+            <div class="combination-of-cards__card card_3"></div>
+            <div class="combination-of-cards__card card_4"></div>
+            <div class="combination-of-cards__card card_5"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
