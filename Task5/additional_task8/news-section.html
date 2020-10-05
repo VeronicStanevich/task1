@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news-section</title>
+    <style>
+        body {
+            background-color: cyan;
+        }
+
+        .news-section {
+            background-color: white;
+            border: 1px solid black;
+            padding: 15px;
+            max-width: 960px;
+            min-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .news-section__title {
+            width: 100%;
+        }
+
+        .news-section__show-archive {
+            width: 50%;
+            max-width: 300px;
+            text-align: right;
+        }
+
+        .news-section__news-block {
+            width: 50%;
+            min-width: 300px;
+            float: left;
+        }
+
+        .news-section__date {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .news-section__img {
+            vertical-align: middle;
+            padding-top: 30px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+<div class="news-section">
+    <table class="news-section__title">
+        <tr>
+            <td class="news-section__news">
+                <div>
+                    <p>Новости</p>
+                </div>
+            </td>
+            <td class="news-section__show-archive">
+                <div>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Показать весь архив</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="book.png" alt="book"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">30 нобря 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="contacts.png" alt="contacts"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">29 ноября 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Autem, maxime.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="tick.png" alt="tick"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">25 ноября 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Autem, maxime.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="safari.png" alt="safari"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">10 ноября 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit. Eius, vero?</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="mail.png" alt="mail"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">29 ноября 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit. Aperiam nobis quasi repudiandae sed!</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="news-section__news-block">
+        <table>
+            <tr>
+                <td rowspan="2" class="news-section__img"><img src="things.png" alt="things"></td>
+            </tr>
+            <tr>
+                <td><p class="news-section__date">5 ноября 2014</p>
+                    <a href="https://iconbird.com/view/3020_iconki_things">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Autem, maxime.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>
