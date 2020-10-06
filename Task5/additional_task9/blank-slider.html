@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blank-slider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .slider {
+            background-color: black;
+            min-height: 120px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .text {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .slider__text {
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: 120px;
+            text-align: center;
+            color: white;
+            z-index: 1;
+
+        }
+
+        .slider__arrow-prev-icon {
+            position: absolute;
+            background-image: url("prev-next-sprite.png");
+            background-position: 0 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            left: 130px;
+            width: 30px;
+            height: 56px;
+            z-index: 1;
+        }
+
+        .slider__arrow-prev {
+            position: absolute;
+            width: 30px;
+            height: 100%;
+
+        }
+
+        .slider__arrow-next-icon {
+            position: absolute;
+            background-image: url("prev-next-sprite.png");
+            background-position: 100% 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 130px;
+            width: 30px;
+            height: 56px;
+            z-index: 1;
+        }
+
+        .slider__arrow-next {
+            width: 30px;
+            height: 100%;
+        }
+
+        .slider__buttons {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            bottom: 45px;
+            margin-top: -26px;
+        }
+
+        ul.slider__buttons-ul {
+            margin: 0;
+            padding: 4px;
+        }
+
+        ul.slider__buttons-ul li {
+            display: inline;
+            margin-right: 5px;
+            border: 1px solid white;
+            background-color: white;
+            padding: 10px 20px;
+            width: 10px;
+        }
+
+        ul.slider__buttons-ul li:hover {
+            background-color: orange;
+            border-color: orange;
+        }
+
+        .slider__img {
+            position: relative;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<h2 class="text title">Верстка заготовки для слайдера</h2>
+
+<div class="slider">
+
+
+    <div class="text slider__text">
+        <hr color="white"/>
+        <h1 class="text">Комфортная одежда</h1>
+        <hr color="white"/>
+        <p>для всех видов спорта</p>
+    </div>
+    <div class="slider__img">
+        <div class="slider__arrow-prev-block">
+            <a class="slider__arrow-prev" href="#"><span class="slider__arrow-prev-icon"></span></a>
+        </div>
+        <div class="slider__arrow-next-block">
+            <a class="slider__arrow-next" href="#"><span class="slider__arrow-next-icon"></span></a>
+        </div>
+        <img src="slider-img-01.jpg" alt="basketball clothing">
+    </div>
+    <div class="slider__buttons">
+        <ul class="slider__buttons-ul">
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
