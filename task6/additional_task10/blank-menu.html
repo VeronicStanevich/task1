@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blank-menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(109, 109, 109);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        tr, td {
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(34, 34, 34);
+            color: white;
+            text-align: center;
+            background-color: rgb(34, 34, 34);
+            padding: 5px 20px;
+            height: 50px;
+        }
+
+        .blank-menu__title {
+            padding-left: 15px;
+        }
+
+        tr {
+            top: 100px;
+        }
+
+        .blank-menu__main::before {
+            content: " ";
+            display: inline-block;
+            background-image: url("sprite_img.png");
+            background-position: 59% 13%;
+            border-radius: 10px;
+            width: 43px;
+            height: 44px;
+        }
+
+        .blank-menu__about-us::before {
+            content: " ";
+            display: inline-block;
+            background-image: url(nabor-ikonok-dlya-internet-magazina.jpg);
+            border-radius: 10px;
+            background-position: 34% 21%;
+            line-height: 44px;
+            width: 32px;
+            height: 40px;
+        }
+
+        .blank-menu__portfolio::before {
+            content: " ";
+            display: inline-block;
+            background-image: url("nabor-ikonok-dlya-internet-magazina.jpg");
+            border-radius: 10px;
+            background-position: 83% 66%;
+            line-height: 44px;
+            width: 43px;
+            height: 43px;
+        }
+
+        .blank-menu__blog::before {
+            content: " ";
+            display: inline-block;
+            background-image: url("sprite_img.png");
+            border-radius: 10px;
+            background-position: 41% 60%;
+            line-height: 44px;
+            width: 46px;
+            height: 43px;
+        }
+
+        .blank-menu__contacts::before {
+            content: " ";
+            display: inline-block;
+            background-image: url("linea.png");
+            border-radius: 10px;
+            background-position: 11% 31%;
+            line-height: 44px;
+            width: 43px;
+            height: 47px;
+        }
+
+        td:hover {
+            background-color: rgb(40, 82, 135);
+            border-color: rgb(40, 82, 135);
+        }
+
+        .blank-menu__main {
+            display: flex;
+            position: relative
+        }
+
+        .blank-menu__under-menu-1 {
+            display: none;
+            position: absolute;
+            top: 100%;
+            background-color: #f1f1f1;
+            z-index: 1;
+        }
+
+        .blank-menu__under-menu-1 * {
+            background-color: #f1f1f1;
+        }
+
+        .blank-menu__under-menu-1 a {
+            color: rgb(113, 117, 127);
+            min-width: 80px;
+            padding: 5px 40px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .blank-menu__main:hover {
+            border: 1px solid rgb(40, 82, 135);
+        }
+
+        .blank-menu__under-menu-1 a:hover {
+            background-color: rgb(186, 186, 186);
+            border-left: 4px solid rgb(40, 82, 135);
+        }
+
+        .blank-menu__main:hover .blank-menu__under-menu-1 {
+            display: block;
+            left: 0;
+        }
+
+        .blank-menu__portfolio {
+            display: flex;
+            position: relative;
+        }
+
+        .blank-menu__portfolio:hover .blank-menu__under-menu-1 {
+            display: block;
+            left: 0;
+        }
+
+        .blank-menu__level3 {
+            display: inline-block;
+            position: relative;
+        }
+
+        .blank-menu__under-menu-2 {
+            display: none;
+            position: absolute;
+        }
+
+        .blank-menu__under-menu-2 a {
+            color: rgb(113, 117, 127);
+            min-width: 80px;
+            padding: 5px 40px;
+            text-decoration: none;
+            background-color: #f1f1f1;
+            display: block;
+        }
+
+        .blank-menu__under-menu-2 a:hover {
+            background-color: rgb(186, 186, 186);
+            border-left: 4px solid rgb(40, 82, 135);
+        }
+
+        .blank-menu__level3:hover .blank-menu__under-menu-2 {
+            display: block;
+            left: 98%;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Могоуровневое горизонтальное меню</h1>
+<div class="blank-menu">
+    <table>
+        <tr>
+            <td class="blank-menu__main"><a class="blank-menu__title"> Главная</a>
+                <div class="blank-menu__under-menu-1">
+                    <a>Подменю 1</a>
+                    <a>Подменю 2</a>
+                    <a>Подменю 3</a>
+                </div>
+            </td>
+            <td class="blank-menu__about-us"><a class="blank-menu__title"> О нас</a></td>
+            <td class="blank-menu__portfolio"><a class="blank-menu__title"> Портфолио</a>
+                <div class="blank-menu__under-menu-1">
+                    <a>Подменю 1</a>
+                    <div class="blank-menu__level3"><a>Уровень 3 меню
+                        <div class="blank-menu__under-menu-2">
+                            <a>Подменю 4</a>
+                            <a>Подменю 5</a>
+                            <a>Подменю 6</a>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </td>
+            <td class="blank-menu__blog"><a class="blank-menu__title"> Блог</a></td>
+            <td class="blank-menu__contacts"><a class="blank-menu__title"> Контакты</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
