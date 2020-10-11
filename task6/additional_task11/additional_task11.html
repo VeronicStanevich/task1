@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>additioal-task11</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(236, 236, 236);
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border: 5px solid white;
+            margin-right: 10px;
+        }
+
+        .question {
+            display: flex;
+            position: relative;
+            margin: 20px;
+        }
+
+        .answer__item {
+            position: relative;
+            display: flex;
+            margin: 50px;
+        }
+
+        .question__text {
+            background-color: rgb(255, 255, 255);
+            border-radius: 7px;
+            padding: 5px;
+            width: 350px;
+            border: 1px solid rgb(173, 173, 173);
+
+        }
+
+        .answer__item-text {
+            background-color: rgb(255, 255, 255);
+            border-radius: 7px;
+            padding: 5px;
+            width: 350px;
+            border: 1px solid rgb(173, 173, 173);
+        }
+
+        .question:before {
+            content: "";
+            position: absolute;
+            top: 60px;
+            left: 29px;
+            height: 462px;
+            width: 2px;
+            background-color: rgb(173, 173, 173);
+        }
+
+        .answer__item:before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 30px;
+            background-color: rgb(173, 173, 173);
+            z-index: -1;
+            top: 29px;
+            left: -40px;
+        }
+
+        .answer__item::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: -10px;
+            transfotm: translateY(-50%);
+            border: 6px solid transparent;
+            border-left-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+<div class="question"><img src="cat.jpg" alt="cat">
+    <div class="question__text"><p><b>User1231231</b> спрашивает:</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            Ab error ipsa repellat similique tenetur vitae?</p></div>
+</div>
+<ul class="answer">
+    <li class="answer__item"><img src="cat.jpg" alt="cat">
+        <div class="answer__item-text"><p><b>User444</b> отвечает:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, laboriosam.</p></div>
+    </li>
+    <li class="answer__item"><img src="cat.jpg" alt="cat">
+        <div class="answer__item-text"><p><b>User8689659</b> отвечает:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eos nulla voluptatem!</p></div>
+    </li>
+    <li class="answer__item"><img src="cat.jpg" alt="cat">
+        <div class="answer__item-text"><p><b>User1234567</b> отвечает:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor facere, tenetur?</p></div>
+    </li>
+</ul>
+</body>
+</html>
