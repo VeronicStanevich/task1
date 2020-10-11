@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visual-steps</title>
+</head>
+<style>
+    li {
+        display: inline;
+        position: relative;
+        border: 3px solid rgb(193, 193, 193);
+        background-color: rgb(193, 193, 193);
+        border-radius: 40px;
+        padding: 10px 15px;
+        margin-right: 20px;
+    }
+
+    .steps__successfully-passed {
+        color: white;
+        background-color: rgb(177, 218, 44);
+    }
+
+    .steps__current {
+        color: white;
+        background-color: rgb(153, 49, 139);
+    }
+
+    .steps__firsts::after {
+        display: inline;
+        content: "";
+        position: absolute;
+        left: 40px;
+        top: 16px;
+        height: 4px;
+        width: 30px;
+        background-color: rgb(193, 193, 193);
+    }
+</style>
+<body>
+<ul class="steps">
+    <li class="steps__firsts steps__successfully-passed"><a>1</a></li>
+    <li class="steps__firsts steps__successfully-passed"><a>2</a></li>
+    <li class="steps__firsts steps__successfully-passed"><a>3</a></li>
+    <li class="steps__firsts steps__current"><a>4</a></li>
+    <li><a>5</a></li>
+</ul>
+</body>
+</html>
