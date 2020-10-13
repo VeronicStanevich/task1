@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tone-block</title>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: cyan;
+        }
+
+        .one-block {
+            display: block;
+            max-width: 400px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        @media (min-width: 1280px) {
+            .one-block {
+                background-color: yellow;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .one-block {
+                background-color: red;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .one-block {
+                background-color: red;
+                border-radius: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .one-block {
+                background-color: yellow;
+                border-radius: 40px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .one-block {
+                border: 2px solid red;
+                background-color: yellow;
+                border-radius: 40px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .one-block {
+                border: 2px solid red;
+                background-color: yellow;
+                border-radius: 50%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .one-block {
+                border: none;
+                margin-top: 0;
+                max-width: 400px;
+                height: 400px;
+                background-color: yellow;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="one-block"></div>
+</body>
+</html>
