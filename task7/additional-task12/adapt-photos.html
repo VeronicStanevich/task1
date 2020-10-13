@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adapt-photos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .gallery {
+            max-width: 1200px;
+            min-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 980px) {
+            img {
+                display: block;
+                width: 313px;
+            }
+
+            .gallery {
+                display: grid;
+                margin: 0 auto;
+                text-align: center;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns:repeat( 3, 313px);
+            }
+        }
+
+        @media (max-width: 980px) {
+            img {
+                display: block;
+                width: 242px;
+            }
+
+            .gallery {
+                display: grid;
+                text-align: center;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns:repeat( 3, 242px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            img {
+                display: block;
+                width: 230px;
+            }
+
+            .gallery {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns:repeat( 2, 230px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                display: block;
+                width: 310px;
+            }
+
+            .gallery {
+                display: grid;
+                text-align: center;
+                grid-row-gap: 10px;
+                grid-template-columns:repeat( 1, 310px);
+            }
+        }
+    </style>
+</head>
+<body class="body">
+<div class="gallery">
+    <img src="nature1.jpeg" alt="mountains">
+    <img src="nature1.jpeg" alt="mountains">
+    <img src="nature1.jpeg" alt="mountains">
+    <img src="nature9.jpeg" alt="nature">
+    <img src="nature9.jpeg" alt="wood">
+    <img src="nature9.jpeg" alt="wood">
+    <img src="nature8.jpeg" alt="wood">
+    <img src="nature8.jpeg" alt="wood">
+    <img src="nature8.jpeg" alt="mountains">
+</div>
+</body>
+</html>
