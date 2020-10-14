@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>additional_task13</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        .body {
+            background-image: url("decorative-background-of-brown-cardboard_23-2148210030.jpg");
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main {
+            position: relative;
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0 auto;
+            background: linear-gradient(to top, rgb(241, 241, 241), rgb(255, 255, 255));
+            padding: 30px;
+            width: 500px;
+        }
+
+        .main:after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            height: 7px;
+            background-image: linear-gradient(
+                    to right,
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0) 30%,
+                    rgba(0, 0, 0, 0) 70%,
+                    rgba(0, 0, 0, 0.3)
+            );;
+        }
+
+        .main__title {
+            text-align: center;
+        }
+
+        .main__top-block {
+            position: absolute;
+            height: 40px;
+            width: 450px;
+            background-color: rgba(0, 0, 0, 0.15);
+            top: -20px;
+            right: 55px;
+        }
+
+        .main__inputs-block {
+            position: relative;
+            /*display: flex;
+            flex-direction: column;
+            align-items: center;*/
+            background-color: rgb(253, 103, 85);
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 15px 20px;
+        }
+
+        .main__inputs {
+            position: relative;
+            text-align: center;
+        }
+
+        .main__button-arrow {
+            position: absolute;
+            color: white;
+            background-color: rgb(251, 58, 41);
+            padding: 20px;
+            border-radius: 50%;
+            border: 7px solid rgb(253, 103, 85);
+            top: 9px;
+            left: 88%;
+        }
+
+        .main__button-arrow:focus {
+            outline: none;
+            border-color: white;
+        }
+
+        .main__button-arrow:active {
+            outline: none;
+            border-color: black;
+        }
+
+        input {
+            width: 90%;
+            height: 40px;
+            border: none;
+            padding: 7px;
+            background-color: rgb(254, 202, 195);
+            font-size: 20px;
+        }
+
+        input:focus {
+            border: none;
+            background-color: white;
+            outline: none;
+        }
+
+        .main__input1 {
+            border-radius: 5px 5px 0 0;
+            margin: -12px;
+        }
+
+        .main__input2 {
+            border-radius: 0 0 5px 5px;
+        }
+
+        .main__forget-password {
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        .main__forget-password > p {
+            color: rgb(46, 41, 43);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="body">
+<div class="main">
+    <div class="main__top-block"></div>
+    <h1 class="main__title">&#8213; АВТОРИЗУЙТЕСЬ &#8213;</h1>
+    <div class="main__inputs-block">
+        <div class="main__inputs">
+            <p><label>
+                <input class="main__input1" type="text" placeholder="Логин">
+            </label></p>
+            <p><label>
+                <input class="main__input2" type="password" placeholder="Пароль">
+            </label></p>
+            <button class="main__button-arrow">&#8594;</button>
+        </div>
+        <div class="main__forget-password">
+            <p>Забыли логин или пароль? <a href="https://rg.ru/2015/06/12/lost-password-site.html">Напомним!</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
