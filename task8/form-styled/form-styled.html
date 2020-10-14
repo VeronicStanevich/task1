@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(109, 109, 109);
+        }
+
+        .form__title {
+            color: white;
+            text-align: center;
+            background-color: rgb(84, 130, 255);
+            padding: 2px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form {
+            font-family: 'Roboto', sans-serif;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            border: 3px solid rgb(84, 130, 255);
+            width: 600px;
+        }
+
+        .form__inputs-container {
+            display: block;
+            padding: 15px;
+        }
+
+        .form__signatures {
+            padding-left: 10px;
+            color: rgb(83, 81, 80);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .form__input {
+            padding: 5px;
+            width: 560px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid rgb(83, 81, 80);
+        }
+
+        input:focus {
+            border: 2px solid rgb(84, 130, 255);
+        }
+
+        textarea {
+            width: 560px;
+            height: 100px;
+            padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            border-radius: 6px;
+            border: 1px solid rgb(83, 81, 80);
+        }
+
+        button {
+            background-color: rgb(84, 130, 255);
+            padding: 10px 60px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        .form__input--column {
+            width: 300px;
+        }
+
+        .form__inputs--grid {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-row-gap: 10px;
+            grid-template-rows: auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="form">
+    <div class="form__title"><h1>&#127968; Обратная связь</h1></div>
+    <div class="form__inputs-container">
+        <div class="form__inputs form__inputs--grid">
+            <p class="form__signatures"><b>Имя:</b></p>
+            <input class="form__input form__input--column" type="text" placeholder="&#128100; Введите Ваше имя">
+            <p class="form__signatures"><b>Email:</b></p>
+            <input class="form__input form__input--column" type="email" placeholder="&#9993; Введите адрес Вашей почты">
+            <p class="form__signatures"><b>Телефон:</b></p>
+            <input class="form__input form__input--column" type="text" placeholder="&#128222; Введите номер телефона">
+            <p class="form__signatures"><b>Сообщение:</b></p>
+        </div>
+        <textarea name="text" placeholder="&#128394; Текст сообщения"></textarea>
+        <p>
+            <button>Отправить</button>
+        </p>
+    </div>
+</div>
+</body>
+</html>
