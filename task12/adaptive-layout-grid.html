@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>adaptive-layout-grid.html</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: rgb(22, 176, 254);
+            text-decoration: none;
+            color: white;
+        }
+
+        .main__text {
+            padding: 15px 10px;
+            grid-area: main-text;
+        }
+
+        menu {
+            margin: 0;
+        }
+
+        menu > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .header__logo {
+            background-color: rgb(107, 107, 107);
+            padding: 10px 15px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .main {
+            background-color: rgb(33, 255, 255);
+        }
+
+        .main__aside-type-1 {
+            background-color: rgb(254, 208, 9);
+        }
+
+        .main__aside-type-2 {
+            background-color: rgb(252, 76, 116);
+        }
+
+        .footer {
+            background-color: rgb(129, 238, 126);
+        }
+
+        .footer__social-network {
+            text-decoration: none;
+            color: white;
+        }
+
+        @media (max-width: 760px) {
+            .header__logo {
+                display: block;
+                margin: 0 auto;
+                grid-area: logo;
+            }
+
+            .header__buttons {
+                display: block;
+            }
+
+            menu {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(4, auto);
+                text-align: center;
+                margin-left: -40px;
+            }
+
+            menu > a {
+                border-top: 2px groove rgb(66, 201, 255);
+                padding: 5px;
+            }
+
+            .main__aside-type-1, .main__aside-type-2, .footer {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .footer__copyright {
+                border-bottom: 1px solid rgb(164, 244, 161);
+                width: 100%;
+            }
+
+            .footer__social-network-block {
+                padding: 10px;
+                border-bottom: 2px groove rgb(164, 244, 161);
+            }
+
+            .footer__facebook {
+                border-bottom: none;
+            }
+        }
+
+        @media (min-width: 760px) and (max-width: 1520px) {
+            .main {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                grid-template-areas: "main-text main-text" "aside-type-1 aside-type-2";
+            }
+
+            .header__logo {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .header__main-page {
+                grid-area: main-page;
+            }
+
+            .header__about-us {
+                grid-area: about-us;
+            }
+
+            .header__products {
+                grid-area: products;
+            }
+
+            .header__products {
+                grid-area: contacts;
+            }
+
+            menu {
+                display: grid;
+                justify-items: center;
+                padding: 10px;
+                grid-template-columns:auto;
+                grid-template-rows: auto;
+                grid-template-areas: "main-page about-us products contacts";
+            }
+
+            .main__text {
+                padding: 10px;
+            }
+
+            .main__aside-type-1 {
+                text-align: center;
+                justify-items: center;
+                padding: 10px;
+                grid-area: aside-type-1;
+            }
+
+            .main__aside-type-2 {
+                justify-items: center;
+                text-align: center;
+                padding: 10px;
+                grid-area: aside-type-2;
+            }
+
+            .footer__copyright {
+                display: grid;
+                justify-items: center;
+                padding: 10px;
+            }
+
+            .footer__social-network-main-block:nth-child(1) {
+                grid-area: social-network-1;
+            }
+
+            .footer__social-network-main-block:nth-child(2) {
+                grid-area: social-network-2;
+
+            }
+
+            .footer__social-network-main-block:nth-child(3) {
+                grid-area: social-network-3;
+            }
+
+            .footer__social-network-main-block {
+                display: grid;
+                justify-items: center;
+                padding: 10px;
+                grid-template-columns:auto;
+                grid-template-rows: auto;
+                grid-template-areas:
+              "social-network-1 social-network-2 social-network-3"
+            }
+        }
+
+        @media (min-width: 1520px) {
+            .header {
+                display: grid;
+                align-self: center;
+                /*justify-items: normal;*/
+                grid-template-columns: 80% 20%;
+                grid-template-rows: auto;
+                grid-template-areas: "logo main-page about-us products contacts";
+            }
+
+            .main__aside-type-1 {
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .main__aside-type-2 {
+                padding-top: 10px;
+                text-align: center;
+            }
+
+            .header__buttons {
+                padding: 5px;
+            }
+
+            menu {
+                align-self: center;
+            }
+
+            .main {
+                display: grid;
+                grid-template-columns: 16% auto 16%;
+                grid-template-rows: auto;
+                grid-template-areas: "aside-type-1 main-text aside-type-2";
+            }
+
+            .footer {
+                display: grid;
+                padding: 10px;
+                align-self: center;
+                grid-template-columns:85% 15%;
+                grid-template-rows: auto;
+            }
+
+            .footer__social-network-main-block {
+                display: grid;
+                grid-template-columns:33% 33% 33%;
+                grid-template-areas: "social-network-1 social-network-2 social-network-3";
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <span class="header__logo">Logo</span>
+    <menu>
+        <a class="header__main-page header__buttons" href="#">Главная</a>
+        <a class="header__about-us header__buttons" href="#">О нас</a>
+        <a class="header__products header__buttons" href="#">Продукты</a>
+        <a class="header__contacts header__buttons" href="#">Контакты</a>
+    </menu>
+</header>
+<main class="main">
+    <div class="main__text">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid consectetur cupiditate dicta doloremque
+            dolorum ducimus eius error in, maxime mollitia neque reprehenderit sit soluta suscipit unde velit!
+            Doloremque
+            facere illum incidunt, inventore iusto magni nam officiis possimus, quae quibusdam sit vel voluptates.
+            Consequuntur error impedit ipsa nisi porro? Assumenda consequuntur dolorem id itaque iusto, nobis non
+            officiis
+            quod. Cumque enim error et minus mollitia officiis sequi soluta vel! Aliquid dignissimos impedit ipsa magni
+            modi
+            rem veniam voluptatem? A atque doloribus enim esse est harum maiores molestias nihil quia, repudiandae sint
+            tempora voluptatem! Consectetur, ex fugiat hic molestias officia sapiente sed soluta. A adipisci asperiores,
+            at
+            aut autem blanditiis consectetur corporis culpa deleniti deserunt dolore doloremque dolorum, eius esse
+            excepturi
+            id illum incidunt iure libero magnam maxime minima molestias nesciunt nihil nostrum obcaecati officiis
+            perspiciatis quidem quisquam quod rem reprehenderit suscipit temporibus ullam vel voluptates voluptatum?
+            Adipisci aliquid assumenda at dolorum ea eos et eveniet explicabo impedit magni molestiae odit qui quisquam
+            ratione, recusandae sed veritatis voluptatibus. Dolorem iste mollitia quas vitae. Aut, delectus dolorum eos
+            eveniet fuga itaque magnam optio perferendis, rerum, sed similique voluptatum. Ab aliquid animi aut commodi
+            cumque deleniti dolorem est excepturi facilis fugit hic id in, incidunt ipsa iste laudantium minus molestiae
+            molestias natus nesciunt nulla odit optio quibusdam reiciendis sed sit sunt tempore ullam vitae
+            voluptatibus.
+            Incidunt mollitia placeat repellat. Consectetur cupiditate doloribus incidunt quos sed! Deserunt, earum
+            velit.
+            Enim in non obcaecati odio possimus quos velit. Doloribus excepturi officiis saepe sunt ut. Blanditiis earum
+            hic
+            minus molestiae sunt tempora, vel voluptatem! Assumenda quas quidem repellendus veniam. A, architecto aut,
+            blanditiis cumque cupiditate dolor dolorum ea eaque et eveniet exercitationem fugiat fugit, illo illum
+            impedit
+            molestias nam non odio quas quod ratione repudiandae rerum sint sit veritatis vero vitae voluptatibus. Illum
+            incidunt itaque necessitatibus?</p>
+        <h2>Why do we use it?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aperiam beatae consequuntur dicta
+            distinctio dolor dolores eos, error est excepturi expedita fuga id incidunt ipsa iste, nihil nobis nostrum
+            odio
+            officiis pariatur porro quia quibusdam quisquam recusandae repellat reprehenderit repudiandae sapiente sed
+            similique soluta ut velit voluptates. Ab aliquid architecto aspernatur atque autem, commodi consequatur ea
+            eum
+            expedita facere fugiat inventore itaque mollitia necessitatibus nisi non officiis possimus quia
+            reprehenderit
+            rerum sequi temporibus tenetur velit vero vitae? Accusamus accusantium alias architecto doloremque dolorum
+            fuga
+            id impedit iste, labore laudantium magni, modi omnis qui quidem quod tempora vero? At autem dolorum ducimus
+            est
+            minima quae repellendus, sunt veritatis! Culpa dicta dolor eligendi facere laudantium maiores neque
+            praesentium
+            sapiente vel. Ad amet animi dicta fugiat ipsa ipsum, itaque laboriosam odio porro recusandae reprehenderit
+            tenetur voluptatem. Ab adipisci alias aliquam amet, cum delectus eos eveniet, libero nemo non perferendis
+            quas.
+            Aliquid animi beatae delectus doloremque doloribus eligendi error expedita facere hic iure laborum libero
+            maiores natus necessitatibus nisi nulla quaerat quam reprehenderit, sed, similique sint sit, unde
+            voluptatem? Ab
+            cupiditate, impedit in laudantium magni maxime molestiae odio possimus quis ratione sequi, veritatis
+            voluptas!
+            Laborum nam nesciunt odio, pariatur perspiciatis quibusdam repellat sit.</p>
+    </div>
+    <div class="main__aside-type-1">Aside type 1</div>
+    <div class="main__aside-type-2">Aside type 2</div>
+</main>
+<footer class="footer">
+    <div class="footer__copyright">&#169;Copyright 2017</div>
+    <div class="footer__social-network-main-block">
+        <div class="footer__social-network-block"><a class="footer__social-network" href="#">Twitter</a></div>
+        <div class="footer__social-network-block"><a class="footer__social-network" href="#">Vkontakte</a></div>
+        <div class="footer__social-network-block footer__facebook"><a class="footer__social-network"
+                                                                      href="#">Facebook</a></div>
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>
