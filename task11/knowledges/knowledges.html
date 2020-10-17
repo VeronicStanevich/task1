@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>knowledges</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .knowledge {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: rgb(255, 255, 255);
+            width: 650px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .knowledge__line {
+            display: block;
+            position: relative;
+            height: 15px;
+            width: 600px;
+            margin: 5px 25px;
+            background-color: rgb(234, 234, 234);
+            border: 3px solid rgb(203, 203, 203);
+            border-radius: 8px;
+        }
+
+        .knowledge__line1:before {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 15px;
+            width: 75%;
+            background-color: rgb(253, 148, 8);
+            border-radius: 7px;
+            top: 0;
+            left: 0;
+            animation: scale-line1 1s linear;
+        }
+
+        @keyframes scale-line1 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 75%;
+            }
+        }
+
+        .knowledge__line2:before {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 15px;
+            width: 65%;
+            background-color: rgb(130, 92, 195);
+            border-radius: 7px;
+            top: 0;
+            left: 0;
+            animation: scale-line2 1s linear;
+        }
+
+        @keyframes scale-line2 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 65%;
+            }
+        }
+
+        .knowledge__line3:before {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 15px;
+            width: 55%;
+            background-color: rgb(234, 58, 62);
+            border-radius: 7px;
+            top: 0;
+            left: 0;
+            animation: scale-line3 1s linear;
+        }
+
+        @keyframes scale-line3 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 55%;
+            }
+        }
+
+        .knowledge__line4:before {
+            display: block;
+            position: absolute;
+            content: " ";
+            height: 15px;
+            width: 40%;
+            background-color: rgb(86, 177, 87);
+            border-radius: 7px;
+            top: 0;
+            left: 0;
+            animation: scale-line4 1s linear;
+        }
+
+        @keyframes scale-line4 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 40%;
+            }
+        }
+
+        p, a {
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="knowledge">
+    <p>Мои знания:</p>
+    <a>HTML</a>
+    <div class="knowledge__line  knowledge__line1"></div>
+    <a>CSS</a>
+    <div class="knowledge__line  knowledge__line2"></div>
+    <a>JavaScript</a>
+    <div class="knowledge__line  knowledge__line3"></div>
+    <a>jQuery</a>
+    <div class="knowledge__line  knowledge__line4"></div>
+</div>
+</body>
+</html>
