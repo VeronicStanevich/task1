@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animations</title>
+    <style>
+        body {
+            margin: 0;
+            background: grey;
+
+        }
+
+        .animations {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            width: 600px;
+            height: auto;
+        }
+
+        @keyframes rotate-straight {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-inverse {
+            100% {
+                transform: rotate(-360deg);
+            }
+        }
+
+        @keyframes change-border {
+            0% {
+                border: 2px solid darkred;
+            }
+            100% {
+                border: 6px solid darkred;
+            }
+        }
+
+        @keyframes scaleY {
+            100% {
+                transform: scaleY(3);
+            }
+        }
+
+        @keyframes change-background {
+            50% {
+                background-color: darkolivegreen;
+            }
+            100% {
+                background-color: grey;
+            }
+        }
+
+        .animations:hover .animations__2 {
+            animation: change-border 5s linear infinite;
+        }
+
+        .animations:hover .animations__3 {
+            animation: rotate-inverse 10s linear infinite;
+        }
+
+        .animations:hover .animations__4 {
+            animation: scaleY 10s linear infinite;
+        }
+
+        .animations:hover .animations__5 {
+            animation: scaleY 10s linear infinite, change-background 10s linear infinite;
+        }
+
+        .animations__1 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-color: darkolivegreen;
+            animation: rotate-straight 3s linear infinite;
+        }
+
+        .animations__2 {
+            margin-left: 30px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid yellow;
+            border-radius: 50%;
+        }
+
+        .animations__3 {
+            margin-left: 30px;
+            display: inline-block;
+            width: 50px;
+            height: 100px;
+            background-color: darkred;
+            border-color: darkred;
+            border-radius: 50%;
+        }
+
+        .animations__4 {
+            margin-left: 30px;
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: blue;
+            border-color: blue;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+
+        .animations__5 {
+            margin-left: 30px;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            border-color: black;
+            border-radius: 5%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="animations">
+    <div class="animations__1"></div>
+    <div class="animations__2"></div>
+    <div class="animations__3"></div>
+    <div class="animations__4"></div>
+    <div class="animations__5"></div>
+</div>
+</body>
+</html>
