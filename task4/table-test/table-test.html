@@ -10,7 +10,7 @@
             border: 2px solid blue;
         }
 
-        th, td {
+        tr, td {
             padding: 5px;
             text-align: center;
             border-right: none;
@@ -19,12 +19,35 @@
         .with-border {
             border: 2px solid blue;
         }
+
+        .table__names {
+            background-color: #888888;
+            color: #ffffff;
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        th {
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            font-size: 30px;
+            text-align: left;
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-<h1>Пример сложной таблицы</h1>
 <table class="table">
-    <tr bgcolor="#888888" style="color: #ffffff; border: 2px solid blue;">
+    <tr>
+        <th colspan="4">Пример сложной таблицы</th>
+    </tr>
+    <tr class="with-border table__names">
         <td>Название1</td>
         <td>Название2</td>
         <td>Ещё название</td>
@@ -35,62 +58,62 @@
     <tr class="with-border">
         <td class="with-border" rowspan="11">JPMC</td>
         <td class="with-border" rowspan="5">CST</td>
-        <td class="with-border" rowspan="3" style="text-align: left;">CT</td>
-        <td class="with-border" style="text-align:left">ADS</td>
+        <td class="with-border align-left" rowspan="3">CT</td>
+        <td class="with-border align-left">ADS</td>
         <td class="with-border">1</td>
         <td class="with-border">10</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" style="text-align:left">BTO</td>
+        <td class="with-border align-left">BTO</td>
         <td class="with-border">2</td>
         <td class="with-border">15</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" style="text-align:left">CSI</td>
+        <td class="with-border align-left">CSI</td>
         <td class="with-border">3</td>
         <td class="with-border">16</td>
     </tr>
     <tr class="with-border">
         <td class="with-border" rowspan="2">VCT</td>
-        <td class="with-border" style="text-align:left">ADS</td>
+        <td class="with-border align-left">ADS</td>
         <td class="with-border">4</td>
         <td class="with-border">10</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" style="text-align:left">BTO</td>
+        <td class="with-border align-left">BTO</td>
         <td class="with-border">5</td>
         <td class="with-border">15</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" colspan="3" style="text-align: right;">Sub Total</td>
+        <td class="with-border align-right" colspan="3">Sub Total</td>
         <td class="with-border">6</td>
         <td class="with-border">15</td>
     </tr>
     <tr class="with-border">
         <td class="with-border" rowspan="4">CST</td>
-        <td class="with-border" rowspan="3" style="text-align: left;">CT</td>
-        <td class="with-border" style="text-align:left">ADS</td>
+        <td class="with-border align-left" rowspan="3">CT</td>
+        <td class="with-border align-left">ADS</td>
         <td class="with-border">7</td>
         <td class="with-border">10</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" style="text-align:left">BTO</td>
+        <td class="with-border align-left">BTO</td>
         <td class="with-border">8</td>
         <td class="with-border">15</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" style="text-align:left">CSI</td>
+        <td class="with-border align-left">CSI</td>
         <td class="with-border">9</td>
         <td class="with-border">16</td>
     </tr>
     <tr class="with-border">
         <td class="with-border">VCT</td>
-        <td class="with-border" style="text-align:left">ADS</td>
+        <td class="with-border align-left">ADS</td>
         <td class="with-border">10</td>
         <td class="with-border">10</td>
     </tr>
     <tr class="with-border">
-        <td class="with-border" colspan="3" style="text-align: right;">Sub Total</td>
+        <td class="with-border align-right" colspan="3">Sub Total</td>
         <td class="with-border">11</td>
         <td class="with-border">15</td>
     </tr>
