@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>figure</title>
 </head>
-<h1 style="color:green;">
-    <center>Теги &#60;figure&#62; и &#60;figcaption&#62;.</center>
+<h1 style="color:green; text-align: center">
+    Теги &#60;figure&#62; и &#60;figcaption&#62;.
 </h1>
 <h2>Элемент &#60;figure&#62;</h2>
 <p>Элемент &#60;figure&#62; используется в сочетании с &#60;figcaption&#62; и предназначен для
@@ -20,27 +20,40 @@
 <p>Элемент &#60;figcaption&#62; не обязателен и добавляется до или после содержимого внутри &#60;figure&#62;.
     Только один &#60;figcaption&#62; может находиться внутри &#60;figure&#62;, при этом допустимо добавлять
     множество других дочерних элементов (например, &#60;img&#62; или &#60;code&#62;).</p>
-<h2 style="color:green;">
-    <center>Примеры использования.</center>
+<h2 style="color:green; text-align: center">
+    Примеры использования.
 </h2>
 <h3>Элемент <b>figure</b> обычно используется для изображений.</h3>
 <p>
 <pre>
     &#60;figure&#62;<br>
-        &#60;img src="dog.jpg" alt="Maltese Terrier"&#62;<br>
+        &#60;img src="orang-utan.jpg" alt="Детёныш орангутанга держится за верёвку"&#62;<br>
     &#60;/figure&#62;<br>
 </pre>
 </p>
+<figure>
+    <img src="http://html5doctor.com/wp-content/uploads/2010/03/orang-utan.jpg"
+         alt="Детёныш орангутанга держится за верёвку">
+</figure>
 <h3>Несколько изображений внутри figure.</h3>
 <p>
 <pre>
     &#60;figure&#62;
-        &#60;img src="dog1.jpg" alt="Maltese Terrier"&#62;
-        &#60;img src="dog2.jpg" alt="Black Labrador"&#62;
-        &#60;img src="dog3.jpg" alt="Golden Retriever"&#62;
+        &#60;img src="kookaburra.jpg" alt="Кукабурра"&#62;
+        &#60;img src="pelican.jpg" alt="Пеликан на пляже"&#62;
+        &#60;img src="lorikeet.jpg" alt="Нахально смотрящий многоцветный лорикет"&#62;
     &#60;/figure&#62;
     </pre>
 </p>
+<figure class="trptych">
+    <img src="http://html5doctor.com/wp-content/uploads/2010/03/kookaburra.jpg" alt="Кукабурра">
+    <img src="http://html5doctor.com/wp-content/uploads/2010/03/pelican.jpg" alt="Пеликан на пляже">
+    <img src="http://html5doctor.com/wp-content/uploads/2010/03/lorikeet.jpg"
+         alt="Нахально смотрящий многоцветный лорикет">
+    <figcaption>Австралийские птицы. Слева направо: кукабурра, пеликан и многоцветный лорикет.<br> Источник:
+        <a href="http://www.flickr.com/photos/rclark/">Ричард Кларк</a>
+    </figcaption>
+</figure>
 <h3>Пример использования figure для блока с кодом:</h3>
 <pre>
 &#60;figure&#62;
@@ -101,6 +114,31 @@
         &#60;figcaption&#62;Three different breeds of dog.&#60;/figcaption&#62;
     &#60;figure&#62;
 </pre>
+<figure>
+    <figcaption>Three different breeds of dog.</figcaption>
+    <img style="height: 200px"
+         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhMTExMVFhUXFRUVEhcSFRUSFRUVFRIXFxcWFRUYHSggGBolHRUVIjEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0OFxAPFysdFR0rKy0tKy0tLS0tLS0tLSstKystLS03NysrLS0tNy03Ky0rNysrKysrKysrLSsrKysrK//AABEIAQMAwwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUCAwYBB//EADoQAAEDAgQDBgUDAgUFAAAAAAEAAhEDIQQSMUEFUWEGInGBkbETMqHB8AfR4RRCFSNSYvEkM3KCkv/EABcBAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAbEQEBAQEBAQEBAAAAAAAAAAAAARECEiFBMf/aAAwDAQACEQMRAD8A+4oiICIiAiIgIiICIiAixzBeoPUWqpWaNSvRVHNBsRYgo5yDJFrDwswg9REQEREBERAREQEREBERAREQEReFAK1Vq7W6n91jiMUxoufCFUVsQHE7fUoMsRisx5eP8LU7HkWDyV47Dgttc7qvc/IdD7qNVIntc92vrdSKQsoWHxQ2B81Oa4G4TTG6jiMtvRbXYkOJA0MLSWC0rJ1IDTVbrG81ojmvP6lw1v0Wk28Vj8SLposaNQHT0Oq2BVhxW+4UrDYsO+63RKReL1awREQEREBERAREQEREBasRUAaSdAFsKpO0+LyU45n2SiHja4INQ3J02jpCpsK41X5SSdyAeq8xFclgB1W/gwygnyXN0z4u8Q74bcoG3l5bqtY4ky6Og/lZ1qw5zyXM8f4yaLXPOw0FlhI6k4gDkFuo4gE/TzXxfC/qHVcS4MGUOAIc8ZjJiQ3kF9L7OYx1ZocQQeREH80WtsdP8W0LP+qEXny1PgolZhaJKr6mKTWTlcMrNO0eMuPnCyda4VXhcQD1U6mfJNMwdVDrEweqxwtWHQZaf7SPYjkVExmYGRr7qUQ17QT08QU1mL+kZErMKHwyrLIOo9tlMC6Jr1ERGCIiAiIgIiICIiDwrmu0QzvI2Y2T48l0dSYsuc4pDZky4mT+cllbFKaIa2+p08FjgsSGtdP+t30iFuxjCaZPUSoGIpd0gcyfZc66RlWxuaRm8ANlRcd4a6rTc0GSRurHheBzkjbdxMD+V0lHh9ICLn6LD+PjXDf0+qznlpgzBn3X1zsdSyUgHfMDF/rB5KyGCpgbDzWp2GI+UiOi3G6uazWvEHcL5f8AqdjKuHEUjFrmL/8ArsvodPMImDCgcX4cysCKjA6RF+XMLazl8l7J9sqhxAb33UjAmqG/Ea7eC3Vsr7Jg8QC0GVxvD+xFKjVLwDl2HIndXVBxpmAfIrG2Ra45ocJBghR8DiIdkO4t4j/laq2NEZ26j5h7r1oBcHD/AMvUfwlYueG4jK6D+SrsLmKtQSD0CvuHVszOosVfNR1EpERUkREQEREBERAREQYvFiuU46MknwHqutK57tZh/wDIqOjcH0WVsQBSz0QBv7wVBrUYYY1cY/PQrLhmN7kcmtcOsbLdjawaTHl0m4Hqubo002BgDSQI/LKUzKROg5uPsFFo4cfM90nU8m+AWYxgnVsc3XJ8hogVMSA1wkEtBOt4XBYftfVqVXNNVrBcNBE2G67DjGIbkdZozCDlEEr4nxbBllUvbMAnJ+x/Nkb/AB9W4f2jfTexr6jX54uBESf+F2VHEh1j5L4f2G4c9+LZUeXZRlJzz3iAYDRsL/RfYQ5sxpyTcL9WNWkQJaVXYpma+jhy0P8AKl08YCImD1Wt3e5dR90YqnjvE8xfrCmUHQ3wgKNjaRJaRqHR5EX9lIeYZ4/ssNK2JnT8hdH2ffIf4j2XMMwp7p53XU9naZyEnc+wV8p6W6Lxeq0CIiAiIgIiICIiAVF4lh/iUns/1NIUpCg4DC4BzKgYQYB16KNxasRykGDHO9/ZfQa1EG8CV8649RhzszstzaN1zsXKhf1ZggFRKlQtvruudx2KewkAzeJWWH7QHLD2zCiusqwxmIqukzCo8dwyqYII0vIsuiw1dr2gnQ/RbWOBBHK1/sslsV8qk4cH0XNJgEC8G2i6inxGQ2TMgX6qtr4XU+vlt7KNhMI8jleQFNtVkx1lCqTY/wAq5wrf3C53AknKugo1YsukcumzEYMtLSdzP0USs3T86K1qVc+UONhAkC8KvxoAqHLsYZ0EfMVtiNSWjMGtGvy/uunwtHI0N5BU/Z7B2+IfBv3KvQr5T1XqIipIiIgIiICIiAiIgLwlerF+hQVHFuIAC2eeYsPquI43Xzi5k8zqun41XAOgJ5um3Rq47iD77X2/lRVxzfEKGYzEc46KvfgD5FXjq3egsIPXRZYqrSjqNlFdIomU6jZDSVtFaoYB2gq1YQYMW6BSjg5EkeW6nGq1mNrRGt+WvRWGFxT7AtU/D4ZsA5bgWW+lggTPNMbrbgZMGFZj4lob5bhe8PojlcWU2u8gWj7q5HO1P4M0uaQSRsW291O/welIMXHX6Ko4W+o3QG/ID7ldJQBi+q6SIrNjYsFkiLUiIiAiIgIiICIiAiIgwqVANVBxXEmgGQVYQtGJotcDmAKDhuK4oX33VCcO+82BvBEyOg1XZ8RcwAmBb5QAAqOhIJflBefRo6ndRXSKerSYIDnOvtEx4FeVuFCM8Wiw3hTq2DcXS43OsWA8Ap4p0yMs3iFLVKzChrRH0U3DMzC/rut1XDagAwvMLhT9VjWQZFosttADkpgpWP5usH0YmNEw16WTpbwWdCiQe9+6ypMgLcMXtlVJT8PUiD9FeYcmLx5aLmqNWeivOEVCWkHYq4ipyIi1giIgIiICIiAiIgIiFB4VT8XxcQ2deW6ssXXyNLuS5itUGbMTJJIb47rNa1cRiCTvoPBYOo2aOgJjqt2JaDDulug3WqqX6MAk/MTeBGimqjRWdl2Wj+mc4/OI6ALfVwha0SZPuoNSq1v9pHSVKkt2VrYHmTv4LDA4gSWRcLFjM3f22nbwUerQLXg36FGrcOl0dJWVc26rR8Mi+8Bbm1ZGl0Y8bUathbKxZQk3VhRowLoxCFj4281ecFqiCN5nxCqsUzukja48lP4QG1GiRcb6GD76K4mrkFerGm2FkqSIiICIiAiIgIiIC8K9QoKzj3/aI6rj8Ri47oF2/Kdo3XW8YeCMuYTuFyuOaAdLE+gU1sShiRVDWt5S7oOXqpzKREDlc/ZUvDiKc6Ek2jlKs6mIlvhcqVMsS4QSdPqVFpYNtS5BA66+fJb5FidY30Cxc+cw58limNerTHdGWR1SlSzAkj0XmCpNI+WNuvqpdaoAMrRsgwgECNgsY3URs5hBt439FYOMBB7hy0qS52yiZLWW4/KCTfZax5V0v5rfhGZTmHnda6dTYrJjsro2/dVE1fsPsFkonD32jqpapIiIgIiICIiAiIgIUXhQUvEqJcSYAAsCdSucxLTNzabrpsZhC6fmPhZc/jsKeRAGxU1UaKdCZ2+yiPrkPhpP7rbisblAAGo9FFwNJxdmdYDmpUt8U8/DDm+B5hecPdLpdaGyfCNVFq8SFIhpEh1/Lms8W8DNHIC2txKxqVhamsc58it7WBzhB3uqXBVHNLuWWB4kqbh6jmVAZ1GiDfjsPD2xqZ+i3Mq2ylYYmqXPYY0BHmtVZ0GOiCYHeiz5SolGvoD+FZmtJjTkjEtlG55Lyo71AWttYwenssPmIjcR6qoyug4ZJaCVMC14dkNA5ALarQIiICIiAiIgIiIC8K9RBGxURoT4BUHEmGJAcB1MrpSqjHNaZMG3Wyytjka1rwsBiJYZ8DbZWWIozsq5+HIPrPooXEbE4dzzSIEgN15X/ZbGOzT4rypRdGpTB0C3XRT+qSA6yli8HpC1PpSLL2jYEIJTq1wAJP5dK/1ELXTfA9ytb6oM30P1Oi1jfRHef6rN0ESNdxv4haGEh5d5eS3lveB9EG0v7mnKfBSsAwOIcNAfotTNCOamcOpQ7kqiKvmr1YtCyVpEREBERAREQEREBYl1l6VRcW4kRIaY90EPjvHMrsoMDmscHiMzBebySuL4/jiTELo+BvAog726KNXZ8WtUd0xqohwpDRzXjsXFz5eKkuqd36eawivNFRwLEb6Kc4EO8gUef9visVFY+oRp4FZ0qq04qsNtwo2DrSVjU7HVwxk7m3qtOEaTm6lhb5LHEHPDba3+sfZWGEpAHNylBtwwh5BupTGR3VEbOv5qrKhleOTlrKwaDPRTqNPca8loJ2UrCm4BVRFXFM2Hgsl40L1WkREQEREBERAREQeFct2mraj7rqSuL4/TeJkGL3/ZZWxw/EReVJ4fx6Cym7TNrz5KJxN94JVSKnfbl1zD3XL9dc+Po5gwTvchWFOq2BOuwH3UOl3gDMC2u5jZSPhht9yN9fPkq1LaxuZ07aea2VWiRCUGywXuLu80bBi/RY1znapuRheG7XIGi5nDcabBykTZdp2gpzSfcggHzC+K06DxUc4TrZT0rma+l8HLqji51ryC02sN/wBl0tNwIAHMC2y+d9ncQ8kANAM3jMAdpImCbrv8AwBsbxsN/wAC2JsWLqWvosTSy3/IUkiQZ5ecqNUfaOWvNaxsFSTa/urXhNPUkeqq8Hhy4iPEHRdLRbA8vqribWxERUkREQEREBF4o+IxYZbdBIlaKuKAVdiOKhU+I4mSs1uOkOPaNVy/aXFOqfI0nzW/DHMzMfdVnEzaJLfC6m1UjieLYWoGl7hvEawFSYQl1UC4E3gSfDxXZ8TLsgmCJk9fELTg6dI1GBgF9PHcqNdHVYYOytDReBrfKOXjzUkYZwdLzaOtz1Uim4taMoF+drDdY1GOmSdrQdVqHoIMtAIETJ3WWUNDALyDMqNhw6SX77bAD3UsExPosbiBxmiTSMcj5iF8sq4TMc0RJNr7dCvqPF60UnzabDoei4TEUw2byd1lVw38ABENblABlzjrGsALuMPT7szrGvquR4Hhg6wgC2ZxuXXsGjku1oYa0k8yZtfkFsZ030agXjqGvW68e8a6Xiy1vxRGmi1mLbgrSM3LZWoXLYTiBa6xuugwuLD+hV81zsSkRFTBERAREQeKq4xg3OGZuoFxzHRWy8hB88xeJeCQWubGstP7KDUxjeZ9F9RLRyWp+HYdWt9ApvKvThGcYb8O8QFHocWo1BUG7Pbmuu4n2bw9ZpDm5eRaYI8Fzj/02ph/xKeJrsdzHwyPO1wpxvpzfEcW11MlhBsd5toqjB1C1jHAgOabzynZdvX/AEzpEH/qKgcbSGsH0Cg4n9LqmUBmK00LmFZ5rfUXWCxecAxNgTHst7sa1wMENIkQ6NeROxVfw3svj6FMUxUovF+8c7TcEfdYO7LY2W5TSEh2c5nXMiNtNVuU2LL4k7Qd7i1vZSGvEa6aKvwnZrFsgOfTeIvnzTM7W0Vnh+BVdDUaBH9oJP1P2WZW+op+1GJa6hAuSR6hcVjqkCBclfWqXAaf93e8Rv4Ld/gtA602nyC3yydyPieC4x8GsHC8Ah3IEiLL6Jg+JsqNDgdhE7wB/K6V3AMNvSZ/8hYt7O4cfKyPCwTye453FY7Wbjp1UDGYwiA0Og8+RXV4jsxQdqXgf7XkLAdk6GXKTUI2/wAx0rLzW+452kwF0h0Bo3N55LpOB0i7vg2BIWqh2LwjTIa/Y3qPNx5q7weFZTblYIH3Vc84i9akIiK0iIiAiIgIiICIiAiIsCERFoQvIXqIPISERAXqIgIiIC8heogIiLAREWgiIgIiIP/Z"
+         alt="Maltese Terrier">
+    <img style="height: 200px"
+         src="https://images.homedepot-static.com/productImages/d1f0f5b8-126e-4478-9bd5-a396bb1573fe/svn/hi-line-gift-garden-statues-87771-05-64_300.jpg"
+         alt="Black Labrador">
+    <img style="height: 200px"
+         src="https://img.freepik.com/free-psd/portrait-of-a-cute-golden-retriever-puppy-wearing-a-santa-hat_53876-73990.jpg?size=338&ext=jpg"
+         alt="Golden Retriever">
+</figure>
+<p>Или</p>
+<figure>
+    <img style="height: 200px"
+         src="data:image/jpeg;base64,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"
+         alt="Maltese Terrier">
+    <img style="height: 200px"
+         src="https://images.homedepot-static.com/productImages/d1f0f5b8-126e-4478-9bd5-a396bb1573fe/svn/hi-line-gift-garden-statues-87771-05-64_300.jpg"
+         alt="Black Labrador">
+    <img style="height: 200px"
+         src="https://img.freepik.com/free-psd/portrait-of-a-cute-golden-retriever-puppy-wearing-a-santa-hat_53876-73990.jpg?size=338&ext=jpg"
+         alt="Golden Retriever">
+    <figcaption>Three different breeds of dog.</figcaption>
+</figure>
 <h3>Можно использовать потоковые элементы в figcaption.</h3>
 <pre>
     &#60;figure&#62;
@@ -111,10 +149,9 @@
         &#60;/figcaption&#62;
     &#60;figure&#62;
 </pre>
-<h2 style="color:green;">
-    <center>Минусы и плюсы использования данных тегов в сравнении с
-        обычной вставкой изображений.
-    </center>
+<h2 style="color:green; text-align: center">
+    Минусы и плюсы использования данных тегов в сравнении с
+    обычной вставкой изображений.
 </h2>
 
 <h3>Плюсы</h3>
