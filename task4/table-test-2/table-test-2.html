@@ -7,10 +7,9 @@
         .table-first {
             width: 100%;
             border-collapse: collapse;
-            border: 2px solid blue;
         }
 
-        th, td {
+        tr, td {
             padding: 5px;
             text-align: center;
             border-right: none;
@@ -22,7 +21,6 @@
 
         .main-row {
             color: #ffffff;
-            border: 2px solid blue;
             background-color: #888888;
         }
 
@@ -32,6 +30,14 @@
 
         .right-position {
             text-align: right;
+        }
+
+        th {
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            font-size: 30px;
+            text-align: left;
+            padding-bottom: 10px;
         }
 
         .first-color-table {
@@ -81,19 +87,19 @@
             background-color: rgb(252, 165, 180);
         }
 
-        .second-color-table__green1 {
+        .second-color-table__green1, .third-color-table__green1 {
             background-color: rgb(31, 124, 26);
         }
 
-        .second-color-table__green2 {
+        .second-color-table__green2, .third-color-table__green2 {
             background-color: rgb(51, 168, 94);
         }
 
-        .second-color-table__green3 {
+        .second-color-table__green3, .third-color-table__green3 {
             background-color: rgb(47, 199, 38);
         }
 
-        .second-color-table__green4 {
+        .second-color-table__green4, .third-color-table__green4 {
             background-color: rgb(34, 255, 8);
         }
 
@@ -110,22 +116,6 @@
             background-color: rgb(0, 0, 0);
         }
 
-        .third-color-table__green1 {
-            background-color: rgb(15, 112, 1);
-        }
-
-        .third-color-table__green2 {
-            background-color: rgb(39, 123, 69);
-        }
-
-        .third-color-table__green3 {
-            background-color: rgb(51, 168, 94);
-        }
-
-        .third-color-table__green4 {
-            background-color: rgb(47, 199, 38);
-        }
-
         .third-color-table__brown1 {
             background-color: rgb(119, 52, 16);
         }
@@ -136,9 +126,11 @@
     </style>
 </head>
 <body>
-<h1>Пример сложной таблицы</h1>
-<table class="table-first">
-    <tr class="main-row">
+<table class="table-first with-border">
+    <tr>
+        <th colspan="4">Пример сложной таблицы</th>
+    </tr>
+    <tr class="main-row with-border">
         <td>Название1</td>
         <td>Название2</td>
         <td>Ещё название</td>
