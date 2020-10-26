@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/lib/owlcarousel/owl.theme.default.min.css">
+    <link href="all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>LSM_edu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            min-height: 102px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
+            background-color: #ab0534;
+            margin-bottom: 0;
+        }
+
+        .header__logo {
+            width: 177px;
+            height: 38px;
+            color: #ffffff;
+            margin-left: 19%;
+            margin-right: 5%;
+            margin-bottom: 24px;
+            font-size: 48px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 20.55px;
+            text-align: left;
+        }
+
+        .header__logo-part1 {
+            font-family: "Roboto - Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1.2px;
+            line-height: normal;
+        }
+
+        .header__logo-part2 {
+            font-family: "Roboto Light", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 1.2px;
+            line-height: normal;
+        }
+
+        .header__menu1 {
+            height: 16px;
+            width: 338px;
+            margin-right: 5%;
+        }
+
+        menu.header__menu1 > a {
+            text-decoration: none;
+            margin-right: 2%;
+            color: #f2f7ff;
+            font-family: "Open Sans - Semibold", serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        .header__menu2 {
+            display: flex;
+        }
+
+        menu.header__menu2 > a {
+            text-decoration: none;
+            color: #f2f7ff;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+        }
+
+        .header__button-basket {
+            margin-right: 10%;
+        }
+
+        .header__button-magnifier {
+            margin-right: 15%;
+        }
+
+        .header__register {
+            font-family: "Open Sans - Semibold", serif;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 0.4px;
+            line-height: normal;
+        }
+
+        .header__login {
+            font-family: "Open Sans - Semibold", serif;
+            font-style: normal;
+            letter-spacing: 0.4px;
+            line-height: normal;
+        }
+
+        .header__register {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .header__login {
+            margin-left: 8px;
+        }
+
+        .icon-enter {
+            margin-left: 8px;
+        }
+
+        .slider {
+            position: relative;
+            margin-top: 0;
+            min-height: 100%;
+            background-color: #ab0534;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .slider__text {
+            padding-top: 90px;
+            color: #f4f8ff;
+        }
+
+        .slider__header {
+            margin: 0;
+            font-family: "Open Sans", serif;
+            font-size: 60px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 53px;
+        }
+
+        .slider__button {
+            width: 270px;
+            height: 67px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 34px;
+            background-color: #ab0534;
+            border: none;
+            margin-top: 45px;
+        }
+
+        .slider__img {
+            width: 772px;
+            height: 590px;
+            margin-top: 63px;
+            margin-right: auto;
+            margin-left: auto;
+            background-image: url("Vector_Smart_Object.png");
+        }
+
+        .slider__image {
+            width: 70px;
+            background-color: #e2bbcc;
+            color: #b11844;
+            font-size: 50px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .slider__image-row1, .slider__image-row2, .slider__image-row3 {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: space-between;
+        }
+
+        .slider__image-row1 {
+            position: relative;
+            width: 360px;
+            margin-bottom: 22px;
+        }
+
+        .slider__image-row1-line1 {
+            position: absolute;
+            background: none;
+            border-left: 2px dotted #e2bbcc;
+            border-bottom: 2px dotted #e2bbcc;
+            height: 46px;
+            width: 47px;
+            top: 65px;
+            left: 37px;
+            border-radius: 2px;
+        }
+
+        .slider__image-row1-line2 {
+            position: absolute;
+            background: none;
+            border-right: 2px dotted #e2bbcc;
+            border-bottom: 2px dotted #e2bbcc;
+            height: 46px;
+            width: 47px;
+            top: 65px;
+            right: 37px;
+            border-radius: 2px;
+        }
+
+        .slider__image-row2 {
+            width: 570px;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .slider__image-row2-line1 {
+            position: absolute;
+            background: none;
+            border-left: 2px dotted #e2bbcc;
+            border-bottom: 2px dotted #e2bbcc;
+            height: 29px;
+            width: 65px;
+            top: 65px;
+            left: 37px;
+            border-radius: 2px;
+        }
+
+        .slider__image-row2-line2 {
+            position: absolute;
+            background: none;
+            border-right: 2px dotted #e2bbcc;
+            border-bottom: 2px dotted #e2bbcc;
+            height: 29px;
+            width: 65px;
+            top: 65px;
+            right: 37px;
+            border-radius: 2px;
+        }
+
+        .slider__image-circle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #e2bbcc;
+            border-radius: 50%;
+            background: none;
+        }
+
+        .slider__image-row2-circle1 {
+            top: 87px;
+            left: 100px;
+        }
+
+        .slider__image-row2-circle2 {
+            top: 87px;
+            right: 100px;
+        }
+
+        .slider__image-row3 {
+            width: 640px;
+            position: relative;
+        }
+
+        .slider__image-row3-line1 {
+            position: absolute;
+            background: none;
+            border-left: 2px dotted #e2bbcc;
+            border-bottom: 2px dotted #e2bbcc;
+            width: 65px;
+            top: 30px;
+            left: 73px;
+        }
+
+        .slider__image-row3-line2 {
+            position: absolute;
+            background: none;
+            border-bottom: 2px dotted #e2bbcc;
+            width: 65px;
+            top: 30px;
+            right: 73px;
+        }
+
+        .slider__image-row3-circle1 {
+            top: 24px;
+            left: 137px;
+        }
+
+        .slider__image-row3-circle2 {
+            top: 24px;
+            right: 137px;
+        }
+
+        .slider__button {
+            padding: 27px 41px 28px 62px;
+            color: #f2f7ff;
+            font-family: "Open Sans - Semibold", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .slider__paragraph-block {
+            margin-top: 36px;
+        }
+
+        .slider__paragraph {
+            width: 619px;
+            height: 25px;
+            color: #f4f8ff;
+            font-family: "Open Sans", monospace;
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 34px;
+            text-align: center;
+        }
+
+        .categories {
+            margin-top: -5px;
+            min-height: 696px;
+            background-color: #f4f8ff;
+            text-align: center;
+            color: #333333;
+            font-family: "Open Sans", serif;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+        }
+
+        .categories__title-block {
+            padding-top: 87px;
+        }
+
+        .categories__title {
+            width: 320px;
+            height: 36px;
+            color: #000000;
+            font-family: "Open Sans", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .categories__line {
+            margin-top: 17px;
+            width: 165px;
+            height: 1px;
+            background-color: #020202;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .categories__img {
+            display: grid;
+            grid-row-gap: 14px;
+            grid-column-gap: 14px;
+            grid-template-rows: repeat(2, 171px);
+            grid-template-columns: repeat(6, 181px);
+            max-width: 1156px;
+            min-height: 356px;
+            margin: 104px auto 0 auto;
+        }
+
+        .categories__image-container {
+            width: 37px;
+            height: 29px;
+            color: #ab0534;
+            font-size: 26px;
+            line-height: 26px;
+            margin-bottom: 5px;
+        }
+
+        .categories__image:hover {
+            background-color: #ab0534;
+            color: #f2f7ff;
+            text-decoration: none;
+            font-family: "Open Sans", sans-serif;
+            cursor: pointer;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            left: -1px;
+            top: -1px;
+            position: relative;
+        }
+
+        .categories__image:hover .categories__image-container {
+            color: white;
+        }
+
+
+        .categories__image {
+            background-color: #f4f8ff;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .categories__img-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .categories__img-content:before {
+            position: absolute;
+            left: -1px;
+            top: 10px;
+            content: "";
+            width: calc(100% + 2px);
+            height: calc(100% - 20px);
+            background-color: #a6a6a6;
+            z-index: -1;
+        }
+
+        .categories__img-content:after {
+            position: absolute;
+            left: 10px;
+            top: -1px;
+            content: "";
+            width: calc(100% - 20px);
+            height: calc(100% + 2px);
+            background-color: #a6a6a6;
+            z-index: -1;
+        }
+
+        .top-courses {
+            min-height: 1371px;
+            background-color: #ffffff;
+        }
+
+        .top-courses__content, .best-sellers-course__content {
+            width: 1173px;
+            height: 1168px;
+            margin-top: 104px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top-courses__content-button, .best-sellers-course__content-button {
+            float: right;
+            bottom: 10px;
+            width: 168px;
+            height: 49px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .top-courses__button, .best-sellers-course__button {
+            margin: 44px 19px;
+            text-decoration: none;
+            color: #080808;
+            font-family: Roboto sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+        }
+
+        .top-courses__content-blocks, .best-sellers-course__content-blocks {
+            position: relative;
+            margin-top: 101px;
+            display: grid;
+            grid-template-columns: repeat(3, 360px);
+            grid-gap: 44px 45px;
+            grid-row-gap: 50px;
+        }
+
+        .top-courses__content-title {
+            width: 168px;
+            height: 27px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 9.44px;
+            text-align: left;
+        }
+
+        .top-courses__content-paragraph, .best-sellers-course__content-paragraph {
+            width: 339px;
+            height: 35px;
+            color: #666666;
+            font-family: Roboto sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .top-courses__content-block, .best-sellers-course__content-block {
+            position: relative;
+            width: 360px;
+            min-height: 465px;
+            box-shadow: 0 1px 3px rgba(27, 23, 26, 0.2);
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+        .top-courses__content-block:hover, .best-sellers-course__content-block:hover {
+            box-shadow: 0 5px 21px 4px rgba(214, 222, 228, 0.68);
+        }
+
+        .top-courses__hover-image {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(171, 5, 52, 0.6);
+            position: absolute;
+            width: 360px;
+            height: 181px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .top-courses__content-block:hover .top-courses__hover-image {
+            display: flex;
+        }
+
+
+        .top-courses__content-image {
+            width: 360px;
+            height: 181px;
+            z-index: 1;
+            display: block;
+            position: relative;
+        }
+
+        .top-courses__last-image {
+            width: 170px;
+            height: 141px;
+            background-color: #edf1f7;
+            padding: 23px 98px 17px 92px;
+        }
+
+        .top-courses__content-text, .best-sellers-course__content-text {
+            padding-top: 29px;
+            padding-left: 28px;
+        }
+
+        .best-sellers-course__content-text-title {
+            font-weight: 800;
+        }
+
+        .top-courses__content-text-paragraph, .best-sellers-course__content-text-paragraph {
+            width: 283px;
+            height: 86px;
+            padding-bottom: 24px;
+            color: #4d4d4d;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 24px;
+            text-align: left;
+            letter-spacing: 0.56px;
+        }
+
+        .top-courses__stars, .best-sellers-course__stars {
+            color: orange;
+        }
+
+        .top-courses__content-text-title {
+            margin-top: -5px;
+            height: 38px;
+            color: #010101;
+            font-family: Roboto sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 23.97px;
+            text-align: left;
+        }
+
+        .top-courses__price, .best-sellers-course__price {
+            font-family: "Roboto - Bold", serif;
+            color: #ab0534;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.92px;
+            line-height: normal;
+            padding-bottom: 5px;
+        }
+
+        .discover-course {
+            margin: 0;
+            height: 484px;
+            background-color: #f7f9fa;
+        }
+
+        .discover-course__content {
+            padding-top: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 1173px;
+            min-height: 282px;
+        }
+
+        .discover-course__title {
+            width: 387px;
+            height: 29px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 9.44px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .discover-course__paragraph {
+            width: 339px;
+            height: 35px;
+            color: #666666;
+            font-family: Roboto sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            margin-bottom: 94px;
+        }
+
+        .discover-course__button {
+            width: 376px;
+            height: 100px;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: Roboto sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 23.97px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+
+        .discover-course__buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .discover-course__button_1 {
+            background-color: rgb(184, 0, 92);
+            background-image: url("discover_course_button_desine.png");
+            margin-right: 28px;
+        }
+
+        .discover-course__button_2 {
+            background-color: rgb(87, 0, 187);
+            background-image: url("discover_course_button_desine.png");
+            margin-right: 26px;
+        }
+
+        .discover-course__button_3 {
+            background-color: rgb(27, 0, 187);
+            background-image: url("discover_course_button_desine.png");
+        }
+
+        .best-sellers-course {
+            min-height: 1370px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .best-sellers-course__content-title {
+            width: 261px;
+            height: 23px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 9.44px;
+            text-align: left;
+        }
+
+        .best-sellers-course__content {
+            width: 1173px;
+            height: 1168px;
+            margin-top: 102px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .best-sellers-course__new-stars {
+            color: #ab0534;
+        }
+
+        .achieve-your-goals {
+            min-height: 1062px;
+        }
+
+        .achieve-your-goals__content {
+            width: 1170px;
+            min-height: 862px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .achieve-your-goals__title {
+            width: 261px;
+            height: 23px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 9.44px;
+            text-align: left;
+        }
+
+        .achieve-your-goals__paragraph {
+            width: 339px;
+            height: 35px;
+            color: #666666;
+            font-family: Roboto sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            margin-bottom: 105px;
+        }
+
+        .achieve-your-goals__content-blocks {
+            display: grid;
+            grid-template-columns: repeat(3, 375px);
+            grid-template-rows: auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 19px;
+        }
+
+        .achieve-your-goals__content-block {
+            width: 375px;
+            min-height: 325px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .achieve-your-goals__content-block:hover {
+            box-shadow: 0 5px 21px 4px rgba(214, 222, 228, 0.68);
+            background-color: #ffffff;
+        }
+
+        .achieve-your-goals__image-col1 {
+            margin-top: 69px;
+        }
+
+        .achieve-your-goals__image-col2 {
+            margin-top: 71px;
+        }
+
+        .achieve-your-goals__content-title {
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 23.97px;
+        }
+
+        .achieve-your-goals__content-paragraph {
+            color: #4c4c4c;
+            font-family: Roboto sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 23.97px;
+        }
+
+        .clients-appreciation {
+            min-height: 1017px;
+            background-color: #f7f9fa;
+        }
+
+        .clients-appreciation__main-text {
+            padding-top: 104px;
+        }
+
+        .clients-appreciation__title {
+            height: 24px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .clients-appreciation__paragraph {
+            width: 339px;
+            height: 35px;
+            color: #666666;
+            font-family: Roboto sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            margin-bottom: 103px;
+        }
+
+        .clients-appreciation__content {
+            width: 1171px;
+            min-height: 828px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .clients-appreciation__main-content-block1 {
+            position: relative;
+            min-width: 585px;
+            min-height: 408px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            border-right: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .clients-appreciation__main-content-block1-background {
+            position: absolute;
+            background-image: url("quotes.png");
+            width: 82px;
+            height: 76px;
+        }
+
+        .clients-appreciation__main-content-block2 {
+            min-width: 577px;
+            min-height: 408px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        .clients-appreciation__main-content {
+            display: flex;
+        }
+
+        .clients-appreciation__main-content-paragraph {
+            margin: 39px 0 56px 34px;
+            width: 397px;
+            min-height: 104px;
+            color: #4d4d4d;
+            font-family: Roboto sans-serif;
+            font-size: 18px;
+            font-style: italic;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+        }
+
+        .clients-appreciation__main-content-person {
+            display: flex;
+        }
+
+        .clients-appreciation__main-content-person-name {
+            margin-left: 15px;
+            width: 67px;
+            height: 13px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 23.97px;
+            text-align: left;
+        }
+
+        .clients-appreciation__main-content-person-paragraph {
+            margin-left: 15px;
+            width: 99px;
+            height: 13px;
+            color: #666666;
+            font-family: Roboto sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+        }
+
+        .clients-appreciation__main-content-video {
+            width: 514px;
+            height: 289px;
+            background-image: url("pexels-photo.png");
+            border: 10px solid rgb(232, 238, 239);
+            border-radius: 10px;
+            float: right;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .clients-appreciation__content-slider-name {
+            margin-top: 100px;
+            text-align: center;
+            height: 29px;
+            color: #000000;
+            font-family: Roboto sans-serif;
+            font-size: 30px;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+        }
+
+        .fa-play-circle {
+            margin-top: 102px;
+            font-size: 61px;
+            color: white;
+        }
+
+        .brands-slider {
+            position: relative;
+            margin-top: 64px;
+        }
+
+        .brands-slider .owl-nav {
+            position: absolute;
+            top: 0;
+            transform: translate(0, -50%);
+        }
+
+        .brands-slider .owl-dots {
+            display: none;
+        }
+
+        .brands-slider .owl-nav {
+            font-size: 36px;
+            opacity: 0.25;
+            color: #040404;
+            width: 100%;
+        }
+
+        .brands-slider .owl-nav .owl-prev {
+            position: absolute;
+            left: -15px;
+        }
+
+        .brands-slider .owl-nav .owl-next {
+            position: absolute;
+            right: -15px;
+        }
+
+        .brands-slider__carousel {
+
+        }
+
+        .brands-slider__item {
+            /*width: 200px;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .blog {
+            min-height: 938px;
+            box-shadow: 0 1px 3px rgba(35, 31, 32, 0.1);
+            background-color: #ffffff;
+            padding-top: 98px;
+            box-sizing: border-box;
+        }
+
+        .blog-slider .owl-stage {
+            min-height: 500px;
+        }
+
+        .blog__content {
+            max-width: 1171px;
+            margin: 0 auto auto;
+        }
+
+        .blog__header {
+            color: #333333;
+            font-family: "Open Sans", sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .blog__description {
+            color: #666666;
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            line-height: 23.98px;
+            margin-bottom: 106px;
+        }
+
+        .blog-slider-item__meta {
+            display: flex;
+            color: #666666;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .blog-slider-item__date {
+            flex-grow: 1;
+            margin-top: 0;
+        }
+
+        .blog-slider-item__user {
+            flex-grow: 1;
+            margin-top: 0;
+        }
+
+        .blog-slider-item__footer-link {
+            text-decoration: none;
+            font-family: "Roboto - Bold", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #ab0534;
+        }
+
+        .blog-slider-item__footer {
+            display: flex;
+        }
+
+        .blog-slider-item__footer-link {
+            flex-grow: 1;
+        }
+
+        .blog-slider-item__controls {
+            flex-grow: 1;
+            color: #666666;
+            font-family: "Roboto Medium", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .blog-slider-item__controls-comments {
+            margin-left: 15px;
+        }
+
+        .fa-heart.active {
+            color: #d80000;
+        }
+
+        .blog-slider .owl-blog-slider .owl-dots {
+            text-align: center;
+        }
+
+        .blog-slider .owl-blog-slider .owl-dot {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-left: 8px;
+            border: 2px solid #b0b0b0;
+        }
+
+        .blog-slider .owl-blog-slider .owl-dot.active {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-left: 8px;
+            border: 2px solid #4d4d4d;
+            background: #4d4d4d;
+        }
+
+        .instructor-form {
+            min-height: 346px;
+            background-image: url("1905212.png");
+        }
+
+        .instructor-form__content {
+            padding-top: 93px;
+            width: 683px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .instructor-form__content-title {
+            margin-top: 0;
+            height: 26px;
+            color: #333333;
+            font-family: Roboto, serif;
+            font-size: 36px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 23.97px;
+            letter-spacing: 3.6px;
+            text-align: center;
+            margin-bottom: 58px;
+        }
+
+        .instructor-form__content-submit {
+            position: relative;
+            z-index: 1;
+        }
+
+        .instructor-form__input {
+            width: 618px;
+            height: 67px;
+            border-radius: 34px;
+            background-color: #ffffff;
+            border: none;
+            color: #000000;
+            font-family: Roboto, serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 22.97px;
+            text-align: left;
+            letter-spacing: 0.85px;
+            padding-left: 65px;
+
+        }
+
+        .instructor-form__button {
+            position: absolute;
+            width: 200px;
+            height: 60px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+            border-radius: 30px;
+            background-color: #ab0534;
+            border: none;
+            text-align: center;
+            color: #ffffff;
+            font-family: Roboto, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            z-index: 2;
+            top: 3px;
+            right: 0;
+            cursor: pointer;
+        }
+
+        .footer {
+            min-height: 488px;
+            background-color: #292662;
+        }
+
+        .footer__content {
+            padding-top: 103px;
+            width: 1177px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer__contact-information {
+            display: flex;
+            flex-direction: column;
+            width: 193px;
+            min-height: 171px;
+            margin-right: 198px;
+        }
+
+        .footer__help-center {
+            display: flex;
+            flex-direction: column;
+            width: 103px;
+            min-height: 145px;
+            margin-right: 140px;
+        }
+
+        .footer__about-us {
+            display: flex;
+            flex-direction: column;
+            width: 77px;
+            min-height: 141px;
+            margin-right: 127px;
+        }
+
+        .footer__tools {
+            display: flex;
+            flex-direction: column;
+            width: 103px;
+            min-height: 143px;
+            margin-right: 124px;
+        }
+
+        .footer__get-in-touch {
+            display: flex;
+            flex-direction: column;
+            width: 96px;
+            min-height: 140px;
+        }
+
+        .footer__main-information {
+            display: flex;
+        }
+
+        .footer__horizontal-line {
+            height: 0;
+            border: 1px solid #b0b0b0;
+            margin-top: 57px;
+            margin-bottom: 30px;
+        }
+
+        .footer__title1 {
+            color: #f4f8ff;
+            font-family: "Open Sans", serif;
+            font-size: 16px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        .footer__title2 {
+            text-align: left;
+            color: #ffffff;
+            font-family: "Roboto - Bold", serif;
+            font-size: 16px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        .footer__title3 {
+            color: #f4f8ff;
+            font-family: "Open Sans", serif;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        .footer__link {
+            text-decoration: none;
+            font-size: 14px;
+            color: #ffffff;
+            font-family: "Roboto - Regular", serif;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            margin-bottom: 15px;
+        }
+
+        .footer__contact-information-links {
+            margin-top: 25px;
+        }
+
+        .phone {
+            color: #ffffff;
+            font-family: Roboto, serif;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 26px;
+        }
+
+        .footer__signature {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer__signature1 {
+            text-decoration: none;
+            width: 392px;
+            height: 15px;
+            color: #ffffff;
+            font-family: Roboto, serif;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 32px;
+            text-align: left;
+            letter-spacing: 0.32px;
+        }
+
+        .footer__signature2 {
+            text-decoration: none;
+            width: 364px;
+            height: 14px;
+            color: #ffffff;
+            font-family: Roboto, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 32px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="body">
+<header class="header">
+    <div class="header__logo"><a class="header__logo-part1">LMS</a><a class="header__logo-part2">edu</a></div>
+    <menu class="header__menu1">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Pages</a>
+        <a href="#">Blog</a>
+    </menu>
+    <menu class="header__menu2">
+        <a class="header__button-basket" href="#"><img alt="basket" src="basket.png"></a>
+        <a class="header__button-magnifier" href="#"><img alt="magnifier" src="magnifier.png"></a>
+        <a class="icon-user"></a> <a class="header__register" href="#">Register</a>
+        <a> / </a>
+        <a class="icon-enter"></a> <a class="header__login" href="#">Login</a>
+    </menu>
+</header>
+<div class="slider">
+    <div class="slider__text">
+        <a class="slider__header"> Learn Excilence in Teaching.</a>
+        <div class="slider__paragraph-block"><a class="slider__paragraph">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. </a></div>
+        <button class="slider__button">EXPLORE COURSES</button>
+    </div>
+    <div class="slider__img">
+        <div class="slider__image-row1">
+            <div class="slider_img1 slider__image"><i class="fas fa-desktop"></i></div>
+            <div class="slider_img2 slider__image"><i class="fas fa-code"></i></div>
+            <div class="slider__image-row1-line1"></div>
+            <div class="slider__image-row1-line2"></div>
+        </div>
+        <div class="slider__image-row2">
+            <div class="slider_img3 slider__image"><i class="fas fa-paint-brush"></i></div>
+            <div class="slider_img4 slider__image"><i class="fab fa-joomla"></i></div>
+            <div class="slider__image-row2-line1"></div>
+            <div class="slider__image-row2-line2"></div>
+            <div class="slider__image-row2-circle1 slider__image-circle"></div>
+            <div class="slider__image-row2-circle2 slider__image-circle"></div>
+        </div>
+        <div class="slider__image-row3">
+            <div class="slider_img5 slider__image"><i class="fas fa-camera"></i></div>
+            <div class="slider_img6 slider__image"><i class="fab fa-wordpress"></i></div>
+            <div class="slider__image-row3-line1"></div>
+            <div class="slider__image-row3-line2"></div>
+            <div class="slider__image-row3-circle1 slider__image-circle"></div>
+            <div class="slider__image-row3-circle2 slider__image-circle"></div>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+    <div class="categories__title-block"><a class="categories__title">Course Categories</a></div>
+    <div class="categories__line"></div>
+    <div class="categories__img">
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-code"></i>
+                </div>
+                <a>Development</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <a>Software</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <a>Design</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <a>Business</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <a>Lifestyle</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <a>Photography</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fab fa-joomla"></i>
+                </div>
+                <a>Joomla</a></div>
+        </div>
+        <div class="categories__img-content">
+            <a href="#">
+                <div class="categories__image">
+                    <div class="categories__image-container">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <a>Wordpress</a></div>
+            </a>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-language"></i>
+                </div>
+                <a>Language</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-music"></i>
+                </div>
+                <a>Music</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-image"></i>
+                </div>
+                <a>Phtoshop</a></div>
+        </div>
+        <div class="categories__img-content">
+            <div class="categories__image">
+                <div class="categories__image-container">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <a>Medicine</a></div>
+        </div>
+    </div>
+</div>
+<div class="top-courses">
+    <div class="top-courses__content">
+        <p class="top-courses__content-title">Top Courses</p>
+        <button class="top-courses__content-button"><a class="top-courses__button" href="#">VIEW MORE</a></button>
+        <div class="top-courses__content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            bibendum
+            venenatis mollis.
+        </div>
+        <div class="top-courses__content-blocks">
+            <div class="top-courses__content-block">
+                <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                        Wild Life</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top-courses__content-block">
+                <img class="top-courses__content-image" src="Woman-riding-a-bike.jpg.png" alt="woman riding a bike">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Lifestyle Archives - The Times to <br>
+                        Change Your Life</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top-courses__content-block">
+                <img alt="english book" class="top-courses__content-image" src="Lapi-Buch.png">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Cambridge English Exam<br>
+                        Preparation</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top-courses__content-block">
+                <img alt="woman with computer" class="top-courses__content-image" src="1926169.png">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Freelancing For Developers : A <br>
+                        Complete Freelancing Course.</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top-courses__content-block">
+                <img alt="guitar" class="top-courses__content-image" src="3596153-acoustic-guitar-wallpaper-hd.png">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Introduction to Fusion of Acoustic<br>
+                        Guitar</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top-courses__content-block">
+                <img alt="mathematics"
+                     class="top-courses__content-image top-courses__content-image-last top-courses__last-image"
+                     src="Mathematics.png">
+                <div class="top-courses__hover-image"><img src="Forma_1%20(1).png"></div>
+                <div class="top-courses__content-text">
+                    <p class="top-courses__content-text-title">Basic Mathematics - Inroduction <br>
+                        to Geometry</p>
+                    <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Morbi bibendum venenatis mollis.
+                        Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="top-courses__price">&#36;159.00</div>
+                    <div class="top-courses__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="discover-course">
+    <div class="discover-course__content">
+        <div class="discover-course__title">Discover Our Popular Course</div>
+        <div class="discover-course__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum
+            venenatis mollis.
+        </div>
+        <div class="discover-course__buttons">
+            <button class="discover-course__button discover-course__button_1"><a href="#"
+                                                                                 class="discover-course__button">Top
+                Rated</a></button>
+            <button class="discover-course__button discover-course__button_2"><a href="#"
+                                                                                 class="discover-course__button">Trending</a>
+            </button>
+            <button class="discover-course__button discover-course__button_3"><a href="#"
+                                                                                 class="discover-course__button">New and
+                Noteworthy</a></button>
+        </div>
+    </div>
+</div>
+<div class="best-sellers-course">
+    <div class="best-sellers-course__content">
+        <p class="best-sellers-course__content-title">Best Sellers Course</p>
+        <button class="best-sellers-course__content-button"><a class="best-sellers-course__button" href="#">VIEW
+            MORE</a>
+        </button>
+        <div class="best-sellers-course__content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi bibendum venenatis mollis.
+        </div>
+        <div class="best-sellers-course__content-blocks">
+            <div class="best-sellers-course__content-block">
+                <img alt="wordpress" src="wordpress-blog.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">WordPress: Understanding Custom</br>
+                        Plugins with PHP</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers-course__content-block">
+                <img alt="web developer" src="redesign-website-part-2.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">The Complete Web Developer </br>
+                        Course 2.0</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel,
+                        suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers-course__content-block">
+                <img alt="design" src="flat-design.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">Introduction to the Design of</br>
+                        Everyday Things</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel,
+                        suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers-course__content-block">
+                <img alt="hacking" src="hacking.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">The Complete Ethical Hacking</br>
+                        Course: A to Z</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel,
+                        suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__new-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers-course__content-block">
+                <img alt="networking" src="networking.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">Introduction to networking for </br>
+                        complete beginners</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel,
+                        suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__new-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="best-sellers-course__content-block">
+                <img alt="internet marketing" src="internet-marketing-banner1.png">
+                <div class="best-sellers-course__content-text">
+                    <p class="best-sellers-course__content-text-title">Digital Analytics for Marketing</br>
+                        Professionals: Marketing (...)</p>
+                    <div class="best-sellers-course__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel,
+                        suscipit
+                    </div>
+                    <div class="best-sellers-course__price">&#36;159.00</div>
+                    <div class="best-sellers-course__new-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="achieve-your-goals">`
+    <div class="achieve-your-goals__content">
+        <p class="achieve-your-goals__title">Achieve Your Goals</p>
+        <div class="achieve-your-goals__paragraph">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Morbi bibendum venenatis mollis.
+        </div>
+        <div class="achieve-your-goals__content-blocks">
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col1" src="skill.png" alt="the note">
+                <span>
+                    <p class="achieve-your-goals__content-title">Expand Skill Development</p>
+                   <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col1" src="self_learn.png" alt="self learn">
+                <span>
+                    <p class="achieve-your-goals__content-title">Self Learn</p>
+                    <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col1" src="tech.png" alt="tech">
+                <span>
+                    <p class="achieve-your-goals__content-title">Tech Jobs</p>
+                    <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col2" src="key.png" alt="key">
+                <span>
+                    <p class="achieve-your-goals__content-title">Unlock Your Potential</p>
+                    <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col2" src="camera.png" alt="camera">
+                <span>
+                    <p class="achieve-your-goals__content-title">Explore Your Passion</p>
+                    <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+            <div class="achieve-your-goals__content-block">
+                <img class="achieve-your-goals__image-col2" src="anylystics.png" alt="analytics">
+                <span>
+                    <p class="achieve-your-goals__content-title">Analytics Work</p>
+                    <p class="achieve-your-goals__content-paragraph">Lorem ipsum dolor sit amet, consectetur<br>
+                        adipiscing elit.Proin ac vulputate (...)</p>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clients-appreciation">
+    <div class="clients-appreciation__content">
+        <div class="clients-appreciation__main-text">
+            <p class="clients-appreciation__title">Client’s Appreciation</p>
+            <div class="clients-appreciation__paragraph">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Morbi bibendum venenatis mollis.
+            </div>
+        </div>
+        <div class="clients-appreciation__main-content">
+            <div class="clients-appreciation__main-content-block1">
+                <div class="clients-appreciation__main-content-block1-background"></div>
+                <div class="clients-appreciation__main-content-paragraph">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Integer a viverra nisl.
+                    Morbi in ornare nibh, sed efficitur neque. Proin efficitur odio eget pulvinar hendrerit.
+                </div>
+                <div class="clients-appreciation__main-content-person">
+                    <img src="02_team.png" alt="person">
+                    <div>
+                        <p class="clients-appreciation__main-content-person-name">John Doe</p>
+                        <a class="clients-appreciation__main-content-person-paragraph">Graphic Designer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-appreciation__main-content-block2">
+                <div class="clients-appreciation__main-content-video"><i class="far fa-play-circle"></i></div>
+            </div>
+        </div>
+        <div class="clients-appreciation__content-slider-name">LMSedu is trusted by 322,000+ students and companies
+            worldwide
+        </div>
+        <section class="brands-slider">
+            <div class="brands-slider__carousel owl-carousel js-brands-carousel">
+                <div class="brands-slider__item">
+                    <a><img src="Envato_Logo.svg.png"></a>
+                </div>
+                <div class="brands-slider__item">
+                    <a><img src="new-google-logo-color.png"></a>
+                </div>
+
+                <div class="brands-slider__item">
+                    <a><img src="Envato_Logo.svg.png"></a>
+                </div>
+                <div class="brands-slider__item">
+                    <a><img src="new-google-logo-gray.png"></a>
+                </div>
+                <div class="brands-slider__item">
+                    <a><img src="new-google-logo-gray.png"></a>
+                </div>
+                <div class="brands-slider__item">
+                    <a><img src="new-google-logo-gray.png"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="blog">
+    <div class="blog__content">
+        <h3 class="blog__header">Our Blog</h3>
+        <p class="blog__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br>
+            Morbi bibendum venenatis mollis. Ut sem metus.
+        </p>
+
+        <div class="blog-slider">
+            <div class="owl-blog-slider owl-carousel js-blog-slider">
+                <div class="top-courses__content-block">
+                    <img alt="office" src="1929933.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+                <div class="top-courses__content-block">
+                    <img alt="office" src="1930579.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="office" src="OCDA1R0.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+
+                <div class="top-courses__content-block">
+                    <img alt="photography and wild life" src="chris-bray-for-f-stop-lounge-profile.png">
+                    <section class="top-courses__content-text blog-slider-item">
+                        <div class="blog-slider-item__meta">
+                            <p class="blog-slider-item__date">
+                                <i class="fas fa-calendar-alt"></i> April 5, 2017
+                            </p>
+                            <p class="blog-slider-item__user">
+                                <i class="fas fa-user"></i> John Doe
+                            </p>
+                        </div>
+                        <p class="top-courses__content-text-title">Conceptual Art, Photography and <br>
+                            Wild Life</p>
+                        <div class="top-courses__content-text-paragraph">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Morbi bibendum venenatis mollis.
+                            Ut sem metus, convallis a libero vel, suscipit
+                        </div>
+
+                        <footer class="blog-slider-item__footer">
+                            <a class="blog-slider-item__footer-link" href="#">Read More <i
+                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <div class="blog-slider-item__controls">
+                                <i class="fas fa-heart active"></i> (51)
+                                <span class="blog-slider-item__controls-comments">
+                                    <i class="far fa-comment-dots"></i> (79)
+                                </span>
+                            </div>
+                        </footer>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="instructor-form">
+    <div class="instructor-form__content">
+        <h3 class="instructor-form__content-title">Become A Instructor</h3>
+        <form class="instructor-form__content-submit">
+            <label>
+                <input class="instructor-form__input" type="text" placeholder="Become A Instructor"/>
+            </label>
+            <button class="instructor-form__button" type="submit">JOIN</button>
+        </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__main-information">
+            <div class="footer__contact-information">
+                <a class="footer__title1">Address:</a>
+                <a class="footer__link" href="#">73724 Route 30</a>
+                <a class="footer__link" href="#">South Richmond Hill, NY 11419</a>
+
+                <div class="footer__contact-information-links">
+                    <a class="footer__title3">Tel: <a class="footer__link phone" href="#">(603)-677-3400</a></a>
+                    <a class="footer__title3">Email:<a class="footer__link" href="#">info@yourdomain.com</a></a>
+                    <a class="footer__title3">Web:<a class="footer__link" href="#">yourdomain.com</a></a>
+                </div>
+            </div>
+            <div class="footer__help-center">
+                <a class="footer__title1">Help Center:</a>
+                <a class="footer__link" href="#">Documentations</a>
+                <a class="footer__link" href="#">Tutorials</a>
+                <a class="footer__link" href="#">Term of Use</a>
+                <a class="footer__link" href="#">Privacy Policy</a>
+            </div>
+            <div class="footer__about-us">
+                <a class="footer__title1">About Us:</a>
+                <a class="footer__link" href="#">Our Team</a>
+                <a class="footer__link" href="#">Company</a>
+                <a class="footer__link" href="#">Jobs</a>
+                <a class="footer__link" href="#">News Latter</a>
+            </div>
+            <div class="footer__tools">
+                <a class="footer__title2"> Tools:</a>
+                <a class="footer__link" href="#">Create Acccount</a>
+                <a class="footer__link" href="#">Log In</a>
+                <a class="footer__link" href="#">Services</a>
+                <a class="footer__link" href="#">Sitemap</a>
+            </div>
+            <div class="footer__get-in-touch">
+                <a class="footer__title2">Get In Touch:</a>
+                <a class="footer__link" href="#">Contact Us</a>
+                <a class="footer__link" href="#">Join Us</a>
+                <a class="footer__link" href="#">Invite Us</a>
+                <a class="footer__link" href="#">Donate</a>
+            </div>
+        </div>
+        <hr class="footer__horizontal-line">
+        <div class="footer__signature">
+            <a class="footer__signature1" href="#">Facebook. Twitter. Instagram. LinkedIn. Google Plus.</a>
+            <a class="footer__signature2" href="#">Copyright &#169; 2017 LMS EDUCATION. All Rights Reserved</a>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous"></script>
+<script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".js-brands-carousel").owlCarousel({
+            items: 4,
+            nav: true,
+        });
+        $(".js-blog-slider").owlCarousel({
+            items: 3,
+            nav: false,
+        });
+    });
+</script>
+</body>
+</html>
