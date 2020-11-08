@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/lib/owlcarousel/owl.carousel.min.css">
@@ -16,20 +17,29 @@
         }
 
         .header {
-            display: flex;
-            align-items: center;
+            /*display: flex;*/
+            /*align-items: center;*/
             min-height: 102px;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.17);
             background-color: #ab0534;
             margin-bottom: 0;
         }
 
+        .header__content {
+            max-width: 1370px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ab0534;
+            min-height: 102px;
+            margin: auto;
+            padding: 0 10%;
+        }
+
         .header__logo {
             width: 177px;
             height: 38px;
             color: #ffffff;
-            margin-left: 19%;
-            margin-right: 5%;
             margin-bottom: 24px;
             font-size: 48px;
             font-weight: 300;
@@ -89,12 +99,21 @@
             text-align: left;
         }
 
+        menu.header__menu1 > a:hover, menu.header__menu2 > a:hover {
+            color: yellow;
+        }
+
         .header__button-basket {
             margin-right: 10%;
         }
 
         .header__button-magnifier {
             margin-right: 15%;
+        }
+
+        .header__button-basket:hover, .header__button-magnifier:hover {
+            background-color: black;
+            border-radius: 50%;
         }
 
         .header__register {
@@ -110,15 +129,12 @@
             font-style: normal;
             letter-spacing: 0.4px;
             line-height: normal;
+            margin-left: 8px;
         }
 
         .header__register {
             margin-left: 8px;
             margin-right: 8px;
-        }
-
-        .header__login {
-            margin-left: 8px;
         }
 
         .icon-enter {
@@ -131,7 +147,6 @@
             min-height: 100%;
             background-color: #ab0534;
             text-align: center;
-            z-index: -1;
         }
 
         .slider__text {
@@ -157,6 +172,25 @@
             background-color: #ab0534;
             border: none;
             margin-top: 45px;
+            padding: 27px 41px 28px 62px;
+            cursor: pointer;
+        }
+
+        .slider__button-text {
+            text-decoration: none;
+            color: #f2f7ff;
+            font-family: "Open Sans - Semibold", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 24px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+
+        .slider__button-text:hover {
+            color: yellow;
         }
 
         .slider__img {
@@ -297,19 +331,6 @@
             right: 137px;
         }
 
-        .slider__button {
-            padding: 27px 41px 28px 62px;
-            color: #f2f7ff;
-            font-family: "Open Sans - Semibold", sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: normal;
-            line-height: 24px;
-            text-align: left;
-            text-transform: uppercase;
-        }
-
         .slider__paragraph-block {
             margin-top: 36px;
         }
@@ -372,8 +393,7 @@
             display: grid;
             grid-row-gap: 14px;
             grid-column-gap: 14px;
-            grid-template-rows: repeat(2, 171px);
-            grid-template-columns: repeat(6, 181px);
+            grid-template-columns: repeat(auto-fit, minmax(181px, 1fr));
             max-width: 1156px;
             min-height: 356px;
             margin: 104px auto 0 auto;
@@ -420,6 +440,7 @@
         .categories__img-content {
             position: relative;
             z-index: 1;
+            height: 171px;
         }
 
         .categories__img-content:before {
@@ -450,8 +471,8 @@
         }
 
         .top-courses__content, .best-sellers-course__content {
-            width: 1173px;
-            height: 1168px;
+            max-width: 1173px;
+            min-height: 1168px;
             margin-top: 104px;
             margin-left: auto;
             margin-right: auto;
@@ -481,11 +502,15 @@
             line-height: normal;
         }
 
+        .top-courses__button:hover, .best-sellers-course__button:hover {
+            color: #ab0534;
+        }
+
         .top-courses__content-blocks, .best-sellers-course__content-blocks {
             position: relative;
             margin-top: 101px;
             display: grid;
-            grid-template-columns: repeat(3, 360px);
+            grid-template-columns: repeat(auto-fill, 360px);
             grid-gap: 44px 45px;
             grid-row-gap: 50px;
         }
@@ -621,7 +646,7 @@
             padding-top: 100px;
             margin-right: auto;
             margin-left: auto;
-            width: 1173px;
+            max-width: 1173px;
             min-height: 282px;
         }
 
@@ -680,15 +705,27 @@
             margin-right: 28px;
         }
 
+        .discover-course__button_1:hover {
+            background-color: rgba(184, 0, 92, 0.7);
+        }
+
         .discover-course__button_2 {
             background-color: rgb(87, 0, 187);
             background-image: url("discover_course_button_desine.png");
             margin-right: 26px;
         }
 
+        .discover-course__button_2:hover {
+            background-color: rgba(87, 0, 187, 0.7);
+        }
+
         .discover-course__button_3 {
             background-color: rgb(27, 0, 187);
             background-image: url("discover_course_button_desine.png");
+        }
+
+        .discover-course__button_3:hover {
+            background-color: rgba(27, 0, 187, 0.7);
         }
 
         .best-sellers-course {
@@ -711,8 +748,8 @@
         }
 
         .best-sellers-course__content {
-            width: 1173px;
-            height: 1168px;
+            max-width: 1173px;
+            min-height: 1168px;
             margin-top: 102px;
             margin-left: auto;
             margin-right: auto;
@@ -727,7 +764,7 @@
         }
 
         .achieve-your-goals__content {
-            width: 1170px;
+            max-width: 1170px;
             min-height: 862px;
             margin-right: auto;
             margin-left: auto;
@@ -762,7 +799,7 @@
 
         .achieve-your-goals__content-blocks {
             display: grid;
-            grid-template-columns: repeat(3, 375px);
+            grid-template-columns: repeat(auto-fill, 375px);
             grid-template-rows: auto;
             grid-column-gap: 20px;
             grid-row-gap: 19px;
@@ -846,7 +883,7 @@
         }
 
         .clients-appreciation__content {
-            width: 1171px;
+            max-width: 1171px;
             min-height: 828px;
             margin-left: auto;
             margin-right: auto;
@@ -854,7 +891,8 @@
 
         .clients-appreciation__main-content-block1 {
             position: relative;
-            min-width: 585px;
+            width: 585px;
+            max-width: 50%;
             min-height: 408px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.07);
             border-right: 1px solid rgba(0, 0, 0, 0.07);
@@ -868,7 +906,8 @@
         }
 
         .clients-appreciation__main-content-block2 {
-            min-width: 577px;
+            width: 577px;
+            max-width: 50%;
             min-height: 408px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.07);
         }
@@ -1108,7 +1147,7 @@
 
         .instructor-form__content {
             padding-top: 93px;
-            width: 683px;
+            max-width: 683px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -1133,7 +1172,7 @@
         }
 
         .instructor-form__input {
-            width: 618px;
+            width: 100%;
             height: 67px;
             border-radius: 34px;
             background-color: #ffffff;
@@ -1147,7 +1186,7 @@
             text-align: left;
             letter-spacing: 0.85px;
             padding-left: 65px;
-
+            box-sizing: border-box;
         }
 
         .instructor-form__button {
@@ -1173,6 +1212,10 @@
             cursor: pointer;
         }
 
+        .instructor-form__button:hover {
+            box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+        }
+
         .footer {
             min-height: 488px;
             background-color: #292662;
@@ -1180,41 +1223,41 @@
 
         .footer__content {
             padding-top: 103px;
-            width: 1177px;
+            max-width: 1177px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .footer__contact-information {
             display: flex;
+            box-sizing: border-box;
             flex-direction: column;
             width: 193px;
             min-height: 171px;
-            margin-right: 198px;
         }
 
         .footer__help-center {
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
             width: 103px;
             min-height: 145px;
-            margin-right: 140px;
         }
 
         .footer__about-us {
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
             width: 77px;
             min-height: 141px;
-            margin-right: 127px;
         }
 
         .footer__tools {
             display: flex;
+            box-sizing: border-box;
             flex-direction: column;
             width: 103px;
             min-height: 143px;
-            margin-right: 124px;
         }
 
         .footer__get-in-touch {
@@ -1226,6 +1269,7 @@
 
         .footer__main-information {
             display: flex;
+            justify-content: space-between;
         }
 
         .footer__horizontal-line {
@@ -1279,6 +1323,10 @@
             margin-bottom: 15px;
         }
 
+        .footer__link:hover, .footer__signature1:hover {
+            text-decoration: underline solid white;
+        }
+
         .footer__contact-information-links {
             margin-top: 25px;
         }
@@ -1329,27 +1377,29 @@
 </head>
 <body class="body">
 <header class="header">
-    <div class="header__logo"><a class="header__logo-part1">LMS</a><a class="header__logo-part2">edu</a></div>
-    <menu class="header__menu1">
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Pages</a>
-        <a href="#">Blog</a>
-    </menu>
-    <menu class="header__menu2">
-        <a class="header__button-basket" href="#"><img alt="basket" src="basket.png"></a>
-        <a class="header__button-magnifier" href="#"><img alt="magnifier" src="magnifier.png"></a>
-        <a class="icon-user"></a> <a class="header__register" href="#">Register</a>
-        <a> / </a>
-        <a class="icon-enter"></a> <a class="header__login" href="#">Login</a>
-    </menu>
+    <div class="header__content">
+        <div class="header__logo"><a class="header__logo-part1">LMS</a><a class="header__logo-part2">edu</a></div>
+        <menu class="header__menu1">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Pages</a>
+            <a href="#">Blog</a>
+        </menu>
+        <menu class="header__menu2">
+            <a class="header__button-basket" href="#"><img alt="basket" src="basket.png"></a>
+            <a class="header__button-magnifier" href="#"><img alt="magnifier" src="magnifier.png"></a>
+            <a class="icon-user"></a> <a class="header__register" href="#">Register</a>
+            <a> / </a>
+            <a class="icon-enter"></a> <a class="header__login" href="#">Login</a>
+        </menu>
+    </div>
 </header>
 <div class="slider">
     <div class="slider__text">
         <a class="slider__header"> Learn Excilence in Teaching.</a>
         <div class="slider__paragraph-block"><a class="slider__paragraph">Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. </a></div>
-        <button class="slider__button">EXPLORE COURSES</button>
+        <button class="slider__button slider__button-text">EXPLORE COURSES</button>
     </div>
     <div class="slider__img">
         <div class="slider__image-row1">
@@ -2168,9 +2218,9 @@
     <div class="instructor-form__content">
         <h3 class="instructor-form__content-title">Become A Instructor</h3>
         <form class="instructor-form__content-submit">
-            <label>
-                <input class="instructor-form__input" type="text" placeholder="Become A Instructor"/>
-            </label>
+
+            <input class="instructor-form__input" type="text" placeholder="Become A Instructor"/>
+
             <button class="instructor-form__button" type="submit">JOIN</button>
         </form>
     </div>
